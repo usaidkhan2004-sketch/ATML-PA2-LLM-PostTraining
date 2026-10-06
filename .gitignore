@@ -28,3 +28,13 @@ data/*
 # Misc
 *.zip
 .DS_Store
+
+# Model weights (manual appendix)
+*.pt
+*.pth
+*.safetensors
+*.bin
+
+# Secrets
+.env
+*.token
