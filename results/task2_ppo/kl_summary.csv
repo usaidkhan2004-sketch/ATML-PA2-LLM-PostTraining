@@ -1,0 +1,7 @@
+condition,name,n_prompts,reward_raw,reward_effective,delta_raw_vs_midpoint,delta_raw_ci_lo,delta_raw_ci_hi,delta_eff_vs_midpoint,delta_eff_ci_lo,delta_eff_ci_hi,kl_token_mean,entropy_token_mean,len_mean,len_std,frac_truncated,stab_median_policy_gradnorm,train_mean_kl_token,stab_max_ratio_dev,stab_mean_clip_fraction,train_updates,train_median_critic_ev,stab_max_policy_gradnorm
+midpoint (start),midpoint,200,1.3418,1.2368,0.0,0.0,0.0,0.0,0.0,0.0,-5.1e-05,1.056,304.5,247.9,0.105,,,,,,,
+SFT base,sft,200,1.361,1.276,0.0192,-0.0641,0.1024,0.0392,-0.0591,0.1406,0.0,1.053,298.2,244.2,0.085,,,,,,,
+standard 20 updates,standard,200,1.3374,1.2624,-0.0043,-0.0975,0.0876,0.0257,-0.0804,0.1342,-1.5e-05,1.0679,296.2,241.5,0.075,0.2751,7.4e-05,0.00422,0.0,20,-4.982,2.2928
+fork beta_KL=0.0,fork_eps0.2_kl0.0,200,1.3232,1.2082,-0.0186,-0.0947,0.0601,-0.0286,-0.1149,0.0628,1.6e-05,1.0529,313.4,259.1,0.115,0.337,-9.2e-05,0.00361,0.0,8,-4.879,1.059
+fork beta_KL=0.1,fork_eps0.2_kl0.1,200,1.3868,1.2918,0.0451,-0.0315,0.1155,0.0551,-0.0263,0.13,-1.6e-05,1.0645,302.5,248.6,0.095,0.3366,-2e-05,0.00396,0.0,8,-4.917,1.0569
+fork beta_KL=0.2,fork_eps0.2_kl0.2,200,1.3827,1.2777,0.0409,-0.0461,0.1307,0.0409,-0.0545,0.1425,-5e-06,1.0453,306.1,252.4,0.105,0.3366,3e-05,0.00375,0.0,8,-6.778,1.0533

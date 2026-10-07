@@ -1,0 +1,45 @@
+[midpoint] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[midpoint] done in 1473s | reward 1.342 (eff 1.237) KL -0.00005 entropy 1.056 len 304.5+-247.9 trunc 0.105
+[standard] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[standard] done in 1426s | reward 1.337 (eff 1.262) KL -0.00001 entropy 1.068 len 296.2+-241.5 trunc 0.075
+[sft] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[sft] done in 1419s | reward 1.361 (eff 1.276) KL 0.00000 entropy 1.053 len 298.2+-244.2 trunc 0.085
