@@ -1,0 +1,96 @@
+{
+  "dataset_length_stats": {
+    "standard_train": {
+      "n": 1500,
+      "frac_chosen_longer": 0.5626666666666666,
+      "frac_rejected_longer": 0.422,
+      "mean_token_diff_chosen_minus_rejected": 42.45,
+      "median_token_diff": 18.0,
+      "corr_lengthdiff_vs_scoregap": 0.041409545299787846
+    },
+    "length_balanced_train": {
+      "n": 1500,
+      "frac_chosen_longer": 0.49133333333333334,
+      "frac_rejected_longer": 0.486,
+      "mean_token_diff_chosen_minus_rejected": 5.163333333333333,
+      "median_token_diff": 0.0,
+      "corr_lengthdiff_vs_scoregap": 0.05133840846018388
+    }
+  },
+  "models": {
+    "standard_dpo": {
+      "n": 237,
+      "overall_accuracy": 0.5527426160337553,
+      "by_stratum": {
+        "preferred_longer": {
+          "n": 78,
+          "preference_accuracy": 0.44871794871794873,
+          "std_error": 0.056315292728359626,
+          "mean_margin": -0.0619348134749975
+        },
+        "length_matched": {
+          "n": 80,
+          "preference_accuracy": 0.5625,
+          "std_error": 0.0554632479665589,
+          "mean_margin": 0.22525742426514625
+        },
+        "rejected_longer": {
+          "n": 79,
+          "preference_accuracy": 0.6455696202531646,
+          "std_error": 0.05381749346897256,
+          "mean_margin": 0.7348678715621368
+        }
+      },
+      "corr_margin_vs_lengthdiff": -0.15349211004270782,
+      "generation_length_tokens": {
+        "n": 290,
+        "mean": 153.0241379310345,
+        "std": 104.02259089909406,
+        "median": 180.0,
+        "iqr": 212.0,
+        "min": 2.0,
+        "max": 256.0
+      },
+      "wordlimit_compliance": 0.56,
+      "rm_score_mean": 1.267461158489359,
+      "kl_token_mean": 0.000397042446023973
+    },
+    "length_balanced_dpo": {
+      "n": 237,
+      "overall_accuracy": 0.620253164556962,
+      "by_stratum": {
+        "preferred_longer": {
+          "n": 78,
+          "preference_accuracy": 0.44871794871794873,
+          "std_error": 0.056315292728359626,
+          "mean_margin": -0.46849950154622394
+        },
+        "length_matched": {
+          "n": 80,
+          "preference_accuracy": 0.625,
+          "std_error": 0.05412658773652741,
+          "mean_margin": 0.3553988605737686
+        },
+        "rejected_longer": {
+          "n": 79,
+          "preference_accuracy": 0.7848101265822784,
+          "std_error": 0.04623593755371157,
+          "mean_margin": 1.484266598013383
+        }
+      },
+      "corr_margin_vs_lengthdiff": -0.32556588935068903,
+      "generation_length_tokens": {
+        "n": 290,
+        "mean": 150.65862068965518,
+        "std": 104.6168906295444,
+        "median": 183.0,
+        "iqr": 217.5,
+        "min": 2.0,
+        "max": 256.0
+      },
+      "wordlimit_compliance": 0.42,
+      "rm_score_mean": 1.2145040314773032,
+      "kl_token_mean": 0.0029401780416255484
+    }
+  }
+}

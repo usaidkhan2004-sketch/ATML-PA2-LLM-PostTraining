@@ -1,0 +1,17 @@
+{
+  "dataset": "data/dpo_standard_eval.jsonl",
+  "max_sequence_length": 768,
+  "kept": 290,
+  "skipped_row_indices": [
+    32,
+    60,
+    71,
+    103,
+    174,
+    184,
+    239,
+    240,
+    254,
+    284
+  ]
+}

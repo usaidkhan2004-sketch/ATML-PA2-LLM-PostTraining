@@ -1,0 +1,488 @@
+[sft] pair evaluation on 'standard': 290 pairs (skipped 10 long prompts)
+  pairs 2/290
+  pairs 52/290
+  pairs 102/290
+  pairs 152/290
+  pairs 202/290
+  pairs 252/290
+[sft] generation on 290 held-out prompts
+  generated 8/290
+  generated 16/290
+  generated 24/290
+  generated 32/290
+  generated 40/290
+  generated 48/290
+  generated 56/290
+  generated 64/290
+  generated 72/290
+  generated 80/290
+  generated 88/290
+  generated 96/290
+  generated 104/290
+  generated 112/290
+  generated 120/290
+  generated 128/290
+  generated 136/290
+  generated 144/290
+  generated 152/290
+  generated 160/290
+  generated 168/290
+  generated 176/290
+  generated 184/290
+  generated 192/290
+  generated 200/290
+  generated 208/290
+  generated 216/290
+  generated 224/290
+  generated 232/290
+  generated 240/290
+  generated 248/290
+  generated 256/290
+  generated 264/290
+  generated 272/290
+  generated 280/290
+  generated 288/290
+  generated 290/290
+[sft] done in 1843s -> /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/results/task1_dpo/eval_sft.json
+  standard: n=290 acc=0.000 loss=0.6931 margin=0.000
+  KL(token)=0.0000 RM=1.225 len=150.9±104.8 wordlimit=0.54
+beta values: [0.03, 0.1, 0.3] | short-run examples: 600
+filtered data/dpo_standard_train.jsonl: kept 1446, skipped 54 (prompt >= 768 tokens)
+run=beta_0.03 beta=0.03 examples=600 micro_batches=300 optimizer_steps=38
+step 1/38 loss 0.6928 acc 0.688 margin 0.024 gnorm 0.71 77.4s/step
+step 2/38 loss 0.6934 acc 0.312 margin -0.016 gnorm 0.59 75.2s/step
+step 3/38 loss 0.6927 acc 0.688 margin 0.027 gnorm 0.66 84.2s/step
+step 4/38 loss 0.6928 acc 0.375 margin 0.021 gnorm 0.61 78.8s/step
+step 5/38 loss 0.6932 acc 0.438 margin -0.005 gnorm 0.58 77.0s/step
+step 6/38 loss 0.6931 acc 0.562 margin 0.003 gnorm 0.61 78.4s/step
+step 7/38 loss 0.6931 acc 0.625 margin 0.003 gnorm 0.64 79.8s/step
+step 8/38 loss 0.6926 acc 0.625 margin 0.036 gnorm 0.53 80.3s/step
+step 9/38 loss 0.6917 acc 0.750 margin 0.099 gnorm 0.68 80.7s/step
+step 10/38 loss 0.6926 acc 0.500 margin 0.037 gnorm 0.64 80.3s/step
+step 11/38 loss 0.6927 acc 0.438 margin 0.030 gnorm 0.63 80.0s/step
+step 12/38 loss 0.6921 acc 0.750 margin 0.070 gnorm 0.62 79.7s/step
+step 13/38 loss 0.6933 acc 0.500 margin -0.011 gnorm 0.66 80.1s/step
+step 14/38 loss 0.6907 acc 0.812 margin 0.163 gnorm 0.65 80.4s/step
+step 15/38 loss 0.6920 acc 0.562 margin 0.080 gnorm 0.70 79.8s/step
+step 16/38 loss 0.6931 acc 0.625 margin 0.004 gnorm 0.56 79.5s/step
+step 17/38 loss 0.6920 acc 0.688 margin 0.079 gnorm 0.60 80.4s/step
+step 18/38 loss 0.6934 acc 0.438 margin -0.014 gnorm 0.55 79.7s/step
+step 19/38 loss 0.6933 acc 0.500 margin -0.009 gnorm 0.61 79.5s/step
+step 20/38 loss 0.6916 acc 0.625 margin 0.104 gnorm 0.57 79.7s/step
+step 21/38 loss 0.6914 acc 0.625 margin 0.119 gnorm 0.62 79.4s/step
+step 22/38 loss 0.6934 acc 0.625 margin -0.014 gnorm 0.50 78.3s/step
+step 23/38 loss 0.6912 acc 0.750 margin 0.132 gnorm 0.59 78.9s/step
+step 24/38 loss 0.6922 acc 0.625 margin 0.063 gnorm 0.57 79.0s/step
+step 25/38 loss 0.6888 acc 0.812 margin 0.293 gnorm 0.73 79.6s/step
+step 26/38 loss 0.6919 acc 0.562 margin 0.084 gnorm 0.56 79.2s/step
+step 27/38 loss 0.6920 acc 0.562 margin 0.078 gnorm 0.54 79.4s/step
+step 28/38 loss 0.6902 acc 0.750 margin 0.199 gnorm 0.66 79.1s/step
+step 29/38 loss 0.6889 acc 0.750 margin 0.286 gnorm 0.65 79.0s/step
+step 30/38 loss 0.6907 acc 0.688 margin 0.166 gnorm 0.55 78.6s/step
+step 31/38 loss 0.6925 acc 0.562 margin 0.046 gnorm 0.57 78.0s/step
+step 32/38 loss 0.6912 acc 0.688 margin 0.132 gnorm 0.59 77.8s/step
+step 33/38 loss 0.6902 acc 0.688 margin 0.198 gnorm 0.60 78.1s/step
+step 34/38 loss 0.6908 acc 0.688 margin 0.159 gnorm 0.58 78.2s/step
+step 35/38 loss 0.6910 acc 0.625 margin 0.144 gnorm 0.58 78.0s/step
+step 36/38 loss 0.6903 acc 0.625 margin 0.191 gnorm 0.56 77.7s/step
+step 37/38 loss 0.6923 acc 0.438 margin 0.059 gnorm 0.90 77.8s/step
+step 38/38 loss 0.6902 acc 0.625 margin 0.199 gnorm 0.93 76.9s/step
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task1_dpo/beta_0.03
+[beta_0.03] pair evaluation on 'standard': 290 pairs (skipped 10 long prompts)
+  pairs 2/290
+  pairs 52/290
+  pairs 102/290
+  pairs 152/290
+  pairs 202/290
+  pairs 252/290
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: ba9212ff-035d-4e81-98f6-ecf013e34497)')' thrown while requesting HEAD https://huggingface.co/yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+[beta_0.03] generation on 290 held-out prompts
+  generated 8/290
+  generated 16/290
+  generated 24/290
+  generated 32/290
+  generated 40/290
+  generated 48/290
+  generated 56/290
+  generated 64/290
+  generated 72/290
+  generated 80/290
+  generated 88/290
+  generated 96/290
+  generated 104/290
+  generated 112/290
+  generated 120/290
+  generated 128/290
+  generated 136/290
+  generated 144/290
+  generated 152/290
+  generated 160/290
+  generated 168/290
+  generated 176/290
+  generated 184/290
+  generated 192/290
+  generated 200/290
+  generated 208/290
+  generated 216/290
+  generated 224/290
+  generated 232/290
+  generated 240/290
+  generated 248/290
+  generated 256/290
+  generated 264/290
+  generated 272/290
+  generated 280/290
+  generated 288/290
+  generated 290/290
+[beta_0.03] done in 1914s -> /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/results/task1_dpo/eval_beta_0.03.json
+  standard: n=290 acc=0.624 loss=0.6911 margin=0.138
+  KL(token)=-0.0000 RM=1.235 len=151.5±105.4 wordlimit=0.54
+filtered data/dpo_standard_train.jsonl: kept 1446, skipped 54 (prompt >= 768 tokens)
+run=beta_0.1 beta=0.1 examples=600 micro_batches=300 optimizer_steps=38
+step 1/38 loss 0.6920 acc 0.688 margin 0.024 gnorm 2.38 77.8s/step
+step 2/38 loss 0.6932 acc 0.500 margin -0.002 gnorm 1.97 75.6s/step
+step 3/38 loss 0.6897 acc 0.875 margin 0.069 gnorm 2.20 84.6s/step
+step 4/38 loss 0.6933 acc 0.375 margin -0.003 gnorm 2.04 79.3s/step
+step 5/38 loss 0.6926 acc 0.625 margin 0.012 gnorm 1.92 77.4s/step
+step 6/38 loss 0.6914 acc 0.625 margin 0.036 gnorm 2.03 78.6s/step
+step 7/38 loss 0.6934 acc 0.562 margin -0.004 gnorm 2.15 80.2s/step
+step 8/38 loss 0.6907 acc 0.688 margin 0.050 gnorm 1.74 80.7s/step
+step 9/38 loss 0.6896 acc 0.688 margin 0.072 gnorm 2.26 81.1s/step
+step 10/38 loss 0.6887 acc 0.688 margin 0.090 gnorm 2.14 80.8s/step
+step 11/38 loss 0.6926 acc 0.312 margin 0.011 gnorm 2.09 80.6s/step
+step 12/38 loss 0.6889 acc 0.688 margin 0.085 gnorm 2.05 80.3s/step
+step 13/38 loss 0.6940 acc 0.562 margin -0.017 gnorm 2.20 80.7s/step
+step 14/38 loss 0.6868 acc 0.812 margin 0.129 gnorm 2.15 81.0s/step
+step 15/38 loss 0.6900 acc 0.625 margin 0.066 gnorm 2.33 80.3s/step
+step 16/38 loss 0.6914 acc 0.688 margin 0.035 gnorm 1.85 80.0s/step
+step 17/38 loss 0.6901 acc 0.562 margin 0.063 gnorm 1.98 80.9s/step
+step 18/38 loss 0.6934 acc 0.438 margin -0.004 gnorm 1.83 80.2s/step
+step 19/38 loss 0.6933 acc 0.500 margin -0.002 gnorm 2.02 80.0s/step
+step 20/38 loss 0.6888 acc 0.625 margin 0.089 gnorm 1.91 80.2s/step
+step 21/38 loss 0.6900 acc 0.562 margin 0.065 gnorm 2.05 79.8s/step
+step 22/38 loss 0.6922 acc 0.688 margin 0.020 gnorm 1.66 78.8s/step
+step 23/38 loss 0.6873 acc 0.625 margin 0.124 gnorm 1.94 79.3s/step
+step 24/38 loss 0.6909 acc 0.562 margin 0.049 gnorm 1.88 79.5s/step
+step 25/38 loss 0.6808 acc 0.688 margin 0.255 gnorm 2.40 80.1s/step
+step 26/38 loss 0.6894 acc 0.625 margin 0.075 gnorm 1.87 79.6s/step
+step 27/38 loss 0.6889 acc 0.562 margin 0.088 gnorm 1.77 79.8s/step
+step 28/38 loss 0.6824 acc 0.812 margin 0.222 gnorm 2.16 79.6s/step
+step 29/38 loss 0.6816 acc 0.625 margin 0.236 gnorm 2.15 79.4s/step
+step 30/38 loss 0.6860 acc 0.688 margin 0.146 gnorm 1.83 79.1s/step
+step 31/38 loss 0.6923 acc 0.438 margin 0.022 gnorm 1.89 78.5s/step
+step 32/38 loss 0.6870 acc 0.750 margin 0.129 gnorm 1.95 78.2s/step
+step 33/38 loss 0.6843 acc 0.625 margin 0.190 gnorm 1.98 78.5s/step
+step 34/38 loss 0.6855 acc 0.625 margin 0.156 gnorm 1.90 78.6s/step
+step 35/38 loss 0.6869 acc 0.625 margin 0.132 gnorm 1.91 78.4s/step
+step 36/38 loss 0.6839 acc 0.625 margin 0.194 gnorm 1.84 78.1s/step
+step 37/38 loss 0.6912 acc 0.500 margin 0.044 gnorm 3.02 78.2s/step
+step 38/38 loss 0.6830 acc 0.625 margin 0.210 gnorm 3.08 77.3s/step
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task1_dpo/beta_0.1
+[beta_0.1] pair evaluation on 'standard': 290 pairs (skipped 10 long prompts)
+  pairs 2/290
+  pairs 52/290
+  pairs 102/290
+  pairs 152/290
+  pairs 202/290
+  pairs 252/290
+[beta_0.1] generation on 290 held-out prompts
+  generated 8/290
+  generated 16/290
+  generated 24/290
+  generated 32/290
+  generated 40/290
+  generated 48/290
+  generated 56/290
+  generated 64/290
+  generated 72/290
+  generated 80/290
+  generated 88/290
+  generated 96/290
+  generated 104/290
+  generated 112/290
+  generated 120/290
+  generated 128/290
+  generated 136/290
+  generated 144/290
+  generated 152/290
+  generated 160/290
+  generated 168/290
+  generated 176/290
+  generated 184/290
+  generated 192/290
+  generated 200/290
+  generated 208/290
+  generated 216/290
+  generated 224/290
+  generated 232/290
+  generated 240/290
+  generated 248/290
+  generated 256/290
+  generated 264/290
+  generated 272/290
+  generated 280/290
+  generated 288/290
+  generated 290/290
+[beta_0.1] done in 1913s -> /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/results/task1_dpo/eval_beta_0.1.json
+  standard: n=290 acc=0.621 loss=0.6872 margin=0.129
+  KL(token)=-0.0001 RM=1.210 len=152.5±105.3 wordlimit=0.5
+filtered data/dpo_standard_train.jsonl: kept 1446, skipped 54 (prompt >= 768 tokens)
+run=beta_0.3 beta=0.3 examples=600 micro_batches=300 optimizer_steps=38
+step 1/38 loss 0.6896 acc 0.688 margin 0.024 gnorm 7.11 78.1s/step
+step 2/38 loss 0.6978 acc 0.438 margin -0.030 gnorm 5.96 75.7s/step
+step 3/38 loss 0.6871 acc 0.438 margin 0.044 gnorm 6.56 84.9s/step
+step 4/38 loss 0.6891 acc 0.438 margin 0.028 gnorm 6.07 79.4s/step
+step 5/38 loss 0.6939 acc 0.562 margin -0.004 gnorm 5.77 77.8s/step
+step 6/38 loss 0.6932 acc 0.562 margin 0.000 gnorm 6.10 79.0s/step
+step 7/38 loss 0.6896 acc 0.562 margin 0.024 gnorm 6.43 80.4s/step
+step 8/38 loss 0.6850 acc 0.750 margin 0.055 gnorm 5.20 80.7s/step
+step 9/38 loss 0.6879 acc 0.562 margin 0.039 gnorm 6.75 81.2s/step
+step 10/38 loss 0.6848 acc 0.750 margin 0.058 gnorm 6.36 80.6s/step
+step 11/38 loss 0.6863 acc 0.438 margin 0.049 gnorm 6.23 80.3s/step
+step 12/38 loss 0.6789 acc 0.812 margin 0.097 gnorm 6.05 79.9s/step
+step 13/38 loss 0.7003 acc 0.438 margin -0.043 gnorm 6.60 80.3s/step
+step 14/38 loss 0.6704 acc 0.875 margin 0.157 gnorm 6.34 80.6s/step
+step 15/38 loss 0.6829 acc 0.500 margin 0.076 gnorm 6.88 79.9s/step
+step 16/38 loss 0.6871 acc 0.750 margin 0.044 gnorm 5.47 79.6s/step
+step 17/38 loss 0.6851 acc 0.562 margin 0.058 gnorm 5.92 80.5s/step
+step 18/38 loss 0.6987 acc 0.438 margin -0.033 gnorm 5.55 79.8s/step
+step 19/38 loss 0.6918 acc 0.438 margin 0.014 gnorm 6.05 79.5s/step
+step 20/38 loss 0.6852 acc 0.438 margin 0.058 gnorm 5.67 79.7s/step
+step 21/38 loss 0.6826 acc 0.625 margin 0.075 gnorm 6.14 79.4s/step
+step 22/38 loss 0.6979 acc 0.625 margin -0.027 gnorm 5.02 78.3s/step
+step 23/38 loss 0.6809 acc 0.688 margin 0.092 gnorm 5.74 78.9s/step
+step 24/38 loss 0.6916 acc 0.500 margin 0.017 gnorm 5.61 79.0s/step
+step 25/38 loss 0.6594 acc 0.750 margin 0.242 gnorm 6.97 79.6s/step
+step 26/38 loss 0.6803 acc 0.625 margin 0.090 gnorm 5.55 79.1s/step
+step 27/38 loss 0.6825 acc 0.625 margin 0.078 gnorm 5.26 79.3s/step
+step 28/38 loss 0.6639 acc 0.688 margin 0.219 gnorm 6.13 79.1s/step
+step 29/38 loss 0.6570 acc 0.562 margin 0.256 gnorm 6.15 78.9s/step
+step 30/38 loss 0.6718 acc 0.688 margin 0.148 gnorm 5.34 78.5s/step
+step 31/38 loss 0.6956 acc 0.438 margin -0.002 gnorm 5.72 77.9s/step
+step 32/38 loss 0.6729 acc 0.688 margin 0.152 gnorm 5.73 77.7s/step
+step 33/38 loss 0.6690 acc 0.625 margin 0.196 gnorm 5.74 77.9s/step
+step 34/38 loss 0.6687 acc 0.562 margin 0.176 gnorm 5.55 78.0s/step
+step 35/38 loss 0.6698 acc 0.625 margin 0.171 gnorm 5.57 77.8s/step
+step 36/38 loss 0.6712 acc 0.562 margin 0.167 gnorm 5.32 77.6s/step
+step 37/38 loss 0.6910 acc 0.562 margin 0.033 gnorm 9.85 77.6s/step
+step 38/38 loss 0.6663 acc 0.625 margin 0.194 gnorm 9.05 76.8s/step
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task1_dpo/beta_0.3
+[beta_0.3] pair evaluation on 'standard': 290 pairs (skipped 10 long prompts)
+  pairs 2/290
+  pairs 52/290
+  pairs 102/290
+  pairs 152/290
+  pairs 202/290
+  pairs 252/290
+[beta_0.3] generation on 290 held-out prompts
+  generated 8/290
+  generated 16/290
+  generated 24/290
+  generated 32/290
+  generated 40/290
+  generated 48/290
+  generated 56/290
+  generated 64/290
+  generated 72/290
+  generated 80/290
+  generated 88/290
+  generated 96/290
+  generated 104/290
+  generated 112/290
+  generated 120/290
+  generated 128/290
+  generated 136/290
+  generated 144/290
+  generated 152/290
+  generated 160/290
+  generated 168/290
+  generated 176/290
+  generated 184/290
+  generated 192/290
+  generated 200/290
+  generated 208/290
+  generated 216/290
+  generated 224/290
+  generated 232/290
+  generated 240/290
+  generated 248/290
+  generated 256/290
+  generated 264/290
+  generated 272/290
+  generated 280/290
+  generated 288/290
+  generated 290/290
+[beta_0.3] done in 1881s -> /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/results/task1_dpo/eval_beta_0.3.json
+  standard: n=290 acc=0.617 loss=0.6788 margin=0.119
+  KL(token)=-0.0001 RM=1.180 len=152.9±105.0 wordlimit=0.56
+
+DPO summary (held-out DPO loss uses each model's own beta, so compare accuracy/margin across beta):
+  SFT base (no DPO)            pairs=0     acc=0.000 margin=0.000 KL=0.00000 RM=1.225 len=151+-105 wl=0.54
+  DPO standard (1 epoch)       pairs=1446  acc=0.624 margin=0.455 KL=0.00040 RM=1.268 len=153+-104 wl=0.56
+  DPO short fork beta=0.03     pairs=600   acc=0.624 margin=0.138 KL=-0.00001 RM=1.235 len=152+-105 wl=0.54
+  DPO short fork beta=0.1      pairs=600   acc=0.621 margin=0.129 KL=-0.00007 RM=1.210 len=152+-105 wl=0.5
+  DPO short fork beta=0.3      pairs=600   acc=0.617 margin=0.119 KL=-0.00015 RM=1.180 len=153+-105 wl=0.56
+Length-balanced train rows: 1500 | stratified eval rows: 246
+filtered data/dpo_length_balanced_train.jsonl: kept 1442, skipped 58 (prompt >= 768 tokens)
+run=length_balanced beta=0.1 examples=1442 micro_batches=721 optimizer_steps=91
+step 1/91 loss 0.6931 acc 0.562 margin 0.000 gnorm 1.64 58.0s/step
+step 2/91 loss 0.6942 acc 0.375 margin -0.020 gnorm 1.72 57.8s/step
+step 3/91 loss 0.6933 acc 0.500 margin -0.003 gnorm 1.79 61.4s/step
+step 4/91 loss 0.6948 acc 0.438 margin -0.032 gnorm 1.69 61.1s/step
+step 5/91 loss 0.6917 acc 0.500 margin 0.030 gnorm 1.71 60.7s/step
+step 6/91 loss 0.6941 acc 0.562 margin -0.018 gnorm 1.69 61.6s/step
+step 7/91 loss 0.6938 acc 0.438 margin -0.013 gnorm 1.80 62.2s/step
+step 8/91 loss 0.6928 acc 0.438 margin 0.008 gnorm 1.76 62.5s/step
+step 9/91 loss 0.6914 acc 0.500 margin 0.035 gnorm 1.70 63.2s/step
+step 10/91 loss 0.6952 acc 0.438 margin -0.040 gnorm 1.69 62.3s/step
+step 11/91 loss 0.6900 acc 0.625 margin 0.064 gnorm 2.12 61.5s/step
+step 12/91 loss 0.6938 acc 0.562 margin -0.012 gnorm 1.76 61.0s/step
+step 13/91 loss 0.6910 acc 0.562 margin 0.043 gnorm 1.97 61.0s/step
+step 14/91 loss 0.6932 acc 0.375 margin 0.000 gnorm 1.88 61.4s/step
+step 15/91 loss 0.6917 acc 0.562 margin 0.029 gnorm 1.61 62.1s/step
+step 16/91 loss 0.6890 acc 0.750 margin 0.084 gnorm 1.63 61.6s/step
+step 17/91 loss 0.6933 acc 0.562 margin -0.004 gnorm 1.75 61.9s/step
+step 18/91 loss 0.6875 acc 0.625 margin 0.115 gnorm 1.80 61.2s/step
+step 19/91 loss 0.6922 acc 0.562 margin 0.022 gnorm 2.35 61.4s/step
+step 20/91 loss 0.6881 acc 0.562 margin 0.102 gnorm 2.01 61.2s/step
+step 21/91 loss 0.6915 acc 0.625 margin 0.034 gnorm 1.53 61.0s/step
+step 22/91 loss 0.6893 acc 0.562 margin 0.078 gnorm 1.61 60.0s/step
+step 23/91 loss 0.6922 acc 0.500 margin 0.020 gnorm 2.06 60.3s/step
+step 24/91 loss 0.6886 acc 0.688 margin 0.092 gnorm 1.63 60.5s/step
+step 25/91 loss 0.6889 acc 0.625 margin 0.087 gnorm 2.00 60.3s/step
+step 26/91 loss 0.6906 acc 0.625 margin 0.052 gnorm 1.77 60.3s/step
+step 27/91 loss 0.6939 acc 0.438 margin -0.010 gnorm 2.18 60.4s/step
+step 28/91 loss 0.6856 acc 0.562 margin 0.155 gnorm 1.71 60.0s/step
+step 29/91 loss 0.6899 acc 0.562 margin 0.071 gnorm 1.94 60.3s/step
+step 30/91 loss 0.6840 acc 0.688 margin 0.188 gnorm 1.73 59.7s/step
+step 31/91 loss 0.6756 acc 0.938 margin 0.356 gnorm 2.02 59.9s/step
+step 32/91 loss 0.6945 acc 0.625 margin -0.019 gnorm 1.73 59.7s/step
+step 33/91 loss 0.6896 acc 0.750 margin 0.072 gnorm 1.75 59.8s/step
+step 34/91 loss 0.6861 acc 0.688 margin 0.143 gnorm 3.21 59.6s/step
+step 35/91 loss 0.6799 acc 0.688 margin 0.269 gnorm 1.71 59.8s/step
+step 36/91 loss 0.6808 acc 0.625 margin 0.255 gnorm 1.55 59.8s/step
+step 37/91 loss 0.6863 acc 0.438 margin 0.141 gnorm 1.70 59.7s/step
+step 38/91 loss 0.6761 acc 0.562 margin 0.358 gnorm 2.16 60.0s/step
+step 39/91 loss 0.6774 acc 0.625 margin 0.330 gnorm 1.81 60.1s/step
+step 40/91 loss 0.6800 acc 0.688 margin 0.276 gnorm 2.05 60.1s/step
+step 41/91 loss 0.6792 acc 0.688 margin 0.293 gnorm 1.86 60.2s/step
+step 42/91 loss 0.6892 acc 0.562 margin 0.087 gnorm 3.16 60.3s/step
+step 43/91 loss 0.6918 acc 0.562 margin 0.037 gnorm 1.68 60.4s/step
+step 44/91 loss 0.6879 acc 0.688 margin 0.116 gnorm 1.84 60.1s/step
+step 45/91 loss 0.6907 acc 0.500 margin 0.071 gnorm 2.03 60.0s/step
+step 46/91 loss 0.6855 acc 0.562 margin 0.160 gnorm 1.56 60.0s/step
+step 47/91 loss 0.6599 acc 0.750 margin 0.706 gnorm 1.94 59.8s/step
+step 48/91 loss 0.6858 acc 0.625 margin 0.172 gnorm 1.77 59.5s/step
+step 49/91 loss 0.6672 acc 0.688 margin 0.536 gnorm 2.02 59.6s/step
+step 50/91 loss 0.6764 acc 0.812 margin 0.345 gnorm 1.81 59.3s/step
+step 51/91 loss 0.7001 acc 0.438 margin -0.123 gnorm 2.05 59.5s/step
+step 52/91 loss 0.6874 acc 0.438 margin 0.130 gnorm 1.83 59.7s/step
+step 53/91 loss 0.6973 acc 0.625 margin -0.058 gnorm 1.81 59.7s/step
+step 54/91 loss 0.6889 acc 0.375 margin 0.105 gnorm 1.69 59.5s/step
+step 55/91 loss 0.6633 acc 0.750 margin 0.627 gnorm 1.88 59.3s/step
+step 56/91 loss 0.6867 acc 0.625 margin 0.149 gnorm 1.87 59.2s/step
+step 57/91 loss 0.6818 acc 0.688 margin 0.271 gnorm 1.81 59.0s/step
+step 58/91 loss 0.6993 acc 0.750 margin -0.093 gnorm 1.97 59.0s/step
+step 59/91 loss 0.6825 acc 0.625 margin 0.233 gnorm 2.13 59.3s/step
+step 60/91 loss 0.6650 acc 0.812 margin 0.596 gnorm 1.87 59.2s/step
+step 61/91 loss 0.6963 acc 0.500 margin -0.032 gnorm 1.88 59.1s/step
+step 62/91 loss 0.6680 acc 0.688 margin 0.552 gnorm 1.97 59.0s/step
+step 63/91 loss 0.6796 acc 0.625 margin 0.316 gnorm 2.03 59.0s/step
+step 64/91 loss 0.6911 acc 0.562 margin 0.099 gnorm 1.97 59.2s/step
+step 65/91 loss 0.6893 acc 0.562 margin 0.153 gnorm 2.52 59.2s/step
+step 66/91 loss 0.6623 acc 0.875 margin 0.651 gnorm 2.02 59.2s/step
+step 67/91 loss 0.6787 acc 0.562 margin 0.334 gnorm 1.79 59.1s/step
+step 68/91 loss 0.6547 acc 0.688 margin 0.818 gnorm 2.13 59.3s/step
+step 69/91 loss 0.6931 acc 0.312 margin 0.073 gnorm 1.91 59.3s/step
+step 70/91 loss 0.6897 acc 0.438 margin 0.108 gnorm 1.94 59.3s/step
+step 71/91 loss 0.6923 acc 0.438 margin 0.059 gnorm 1.89 59.4s/step
+step 72/91 loss 0.6705 acc 0.625 margin 0.504 gnorm 2.13 59.5s/step
+step 73/91 loss 0.6766 acc 0.688 margin 0.382 gnorm 2.09 59.5s/step
+step 74/91 loss 0.6483 acc 0.750 margin 0.951 gnorm 1.98 59.5s/step
+step 75/91 loss 0.6658 acc 0.625 margin 0.612 gnorm 2.15 59.5s/step
+step 76/91 loss 0.6923 acc 0.500 margin 0.093 gnorm 1.97 59.5s/step
+step 77/91 loss 0.6780 acc 0.625 margin 0.316 gnorm 1.62 59.6s/step
+step 78/91 loss 0.6683 acc 0.750 margin 0.522 gnorm 2.06 59.6s/step
+step 79/91 loss 0.6398 acc 0.750 margin 1.182 gnorm 2.32 59.5s/step
+step 80/91 loss 0.6887 acc 0.500 margin 0.174 gnorm 2.04 59.6s/step
+step 81/91 loss 0.6927 acc 0.562 margin 0.107 gnorm 2.03 59.6s/step
+step 82/91 loss 0.7039 acc 0.312 margin -0.156 gnorm 1.89 59.6s/step
+step 83/91 loss 0.6731 acc 0.562 margin 0.520 gnorm 2.00 59.6s/step
+step 84/91 loss 0.6915 acc 0.562 margin 0.086 gnorm 1.88 59.6s/step
+step 85/91 loss 0.6705 acc 0.562 margin 0.539 gnorm 1.92 59.7s/step
+step 86/91 loss 0.6343 acc 0.688 margin 1.351 gnorm 2.51 59.7s/step
+step 87/91 loss 0.6710 acc 0.625 margin 0.510 gnorm 1.69 59.6s/step
+step 88/91 loss 0.6888 acc 0.625 margin 0.132 gnorm 2.06 59.8s/step
+step 89/91 loss 0.6911 acc 0.500 margin 0.128 gnorm 2.60 59.8s/step
+step 90/91 loss 0.6697 acc 0.688 margin 0.567 gnorm 1.76 59.8s/step
+step 91/91 loss 0.5992 acc 1.000 margin 2.095 gnorm 5.71 59.3s/step
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task1_dpo/length_balanced
+[length_balanced] pair evaluation on 'standard': 290 pairs (skipped 10 long prompts)
+  pairs 2/290
+  pairs 52/290
+  pairs 102/290
+  pairs 152/290
+  pairs 202/290
+  pairs 252/290
+[length_balanced] pair evaluation on 'stratified': 237 pairs (skipped 9 long prompts)
+  pairs 2/237
+  pairs 52/237
+  pairs 102/237
+  pairs 152/237
+  pairs 202/237
+[length_balanced] generation on 290 held-out prompts
+  generated 8/290
+  generated 16/290
+  generated 24/290
+  generated 32/290
+  generated 40/290
+  generated 48/290
+  generated 56/290
+  generated 64/290
+  generated 72/290
+  generated 80/290
+  generated 88/290
+  generated 96/290
+  generated 104/290
+  generated 112/290
+  generated 120/290
+  generated 128/290
+  generated 136/290
+  generated 144/290
+  generated 152/290
+  generated 160/290
+  generated 168/290
+  generated 176/290
+  generated 184/290
+  generated 192/290
+  generated 200/290
+  generated 208/290
+  generated 216/290
+  generated 224/290
+  generated 232/290
+  generated 240/290
+  generated 248/290
+  generated 256/290
+  generated 264/290
+  generated 272/290
+  generated 280/290
+  generated 288/290
+  generated 290/290
+[length_balanced] done in 2233s -> /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/results/task1_dpo/eval_length_balanced.json
+  standard: n=290 acc=0.614 loss=0.6744 margin=0.521
+  stratified: n=237 acc=0.620 loss=0.6757 margin=0.461
+     length_matched: n=80 acc=0.625
+     preferred_longer: n=78 acc=0.449
+     rejected_longer: n=79 acc=0.785
+  KL(token)=0.0029 RM=1.215 len=150.7±104.6 wordlimit=0.42
+
+Dataset length structure (a property of the data):
+  standard_train: chosen longer 0.563, rejected longer 0.422, mean diff 42.5 tok, corr(lengthdiff, scoregap) 0.041409545299787846
+  length_balanced_train: chosen longer 0.491, rejected longer 0.486, mean diff 5.2 tok, corr(lengthdiff, scoregap) 0.05133840846018388
+
+Preference accuracy on the length-stratified held-out set (a property of the policy):
+  standard_dpo: overall 0.553 | preferred_longer: 0.449 (n=78) | length_matched: 0.562 (n=80) | rejected_longer: 0.646 (n=79)
+      corr(margin, chosen-rejected length) -0.15349211004270782 | gen len 153.0+-104.0 | word-limit 0.56 | RM 1.267
+  length_balanced_dpo: overall 0.620 | preferred_longer: 0.449 (n=78) | length_matched: 0.625 (n=80) | rejected_longer: 0.785 (n=79)
+      corr(margin, chosen-rejected length) -0.32556588935068903 | gen len 150.7+-104.6 | word-limit 0.42 | RM 1.215
