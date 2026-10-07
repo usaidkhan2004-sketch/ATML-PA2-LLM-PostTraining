@@ -1,0 +1,11 @@
+{
+  "run_name": "beta_0.1",
+  "beta": 0.1,
+  "seed": 6304,
+  "dataset": "data/dpo_standard_train.jsonl",
+  "examples": 600,
+  "optimizer_steps": 38,
+  "wall_clock_s": 2939.9572366671637,
+  "peak_mps_driver_gb": 14.2984619140625,
+  "adapter": "/Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task1_dpo/beta_0.1"
+}

@@ -1,0 +1,58 @@
+[standard] pair evaluation on 'standard': 290 pairs (skipped 10 long prompts)
+  pairs 2/290
+  pairs 52/290
+  pairs 102/290
+  pairs 152/290
+  pairs 202/290
+  pairs 252/290
+[standard] pair evaluation on 'stratified': 237 pairs (skipped 9 long prompts)
+  pairs 2/237
+  pairs 52/237
+  pairs 102/237
+  pairs 152/237
+  pairs 202/237
+[standard] generation on 290 held-out prompts
+  generated 8/290
+  generated 16/290
+  generated 24/290
+  generated 32/290
+  generated 40/290
+  generated 48/290
+  generated 56/290
+  generated 64/290
+  generated 72/290
+  generated 80/290
+  generated 88/290
+  generated 96/290
+  generated 104/290
+  generated 112/290
+  generated 120/290
+  generated 128/290
+  generated 136/290
+  generated 144/290
+  generated 152/290
+  generated 160/290
+  generated 168/290
+  generated 176/290
+  generated 184/290
+  generated 192/290
+  generated 200/290
+  generated 208/290
+  generated 216/290
+  generated 224/290
+  generated 232/290
+  generated 240/290
+  generated 248/290
+  generated 256/290
+  generated 264/290
+  generated 272/290
+  generated 280/290
+  generated 288/290
+  generated 290/290
+[standard] done in 2235s -> /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/results/task1_dpo/eval_standard.json
+  standard: n=290 acc=0.624 loss=0.6742 margin=0.455
+  stratified: n=237 acc=0.553 loss=0.6810 margin=0.301
+     length_matched: n=80 acc=0.562
+     preferred_longer: n=78 acc=0.449
+     rejected_longer: n=79 acc=0.646
+  KL(token)=0.0004 RM=1.267 len=153.0±104.0 wordlimit=0.56

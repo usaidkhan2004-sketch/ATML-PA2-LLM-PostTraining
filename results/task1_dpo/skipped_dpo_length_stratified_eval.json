@@ -1,0 +1,16 @@
+{
+  "dataset": "data/dpo_length_stratified_eval.jsonl",
+  "max_sequence_length": 768,
+  "kept": 237,
+  "skipped_row_indices": [
+    6,
+    7,
+    20,
+    22,
+    57,
+    76,
+    82,
+    144,
+    209
+  ]
+}

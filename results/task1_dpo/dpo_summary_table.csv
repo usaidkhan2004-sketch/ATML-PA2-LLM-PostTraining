@@ -1,0 +1,6 @@
+condition,name,train_pairs,optimizer_steps,beta,heldout_pref_acc,heldout_dpo_loss_at_own_beta,mean_margin,kl_token_mean,rm_score_mean,rm_score_std,len_mean_tokens,len_std_tokens,wordlimit_compliance
+SFT base (no DPO),sft,0,0,,0.0,0.6931,0.0,0.0,1.2247,1.2206,150.9,104.8,0.54
+DPO standard (1 epoch),standard,1446,91,0.1,0.6241,0.6742,0.455,0.0004,1.2675,1.2081,153.0,104.0,0.56
+DPO short fork beta=0.03,beta_0.03,600,38,0.03,0.6241,0.6911,0.1376,-1e-05,1.2352,1.1794,151.5,105.4,0.54
+DPO short fork beta=0.1,beta_0.1,600,38,0.1,0.6207,0.6872,0.1289,-7e-05,1.2098,1.1916,152.5,105.3,0.5
+DPO short fork beta=0.3,beta_0.3,600,38,0.3,0.6172,0.6788,0.1188,-0.00015,1.1803,1.2207,152.9,105.0,0.56
