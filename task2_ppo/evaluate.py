@@ -2,31 +2,18 @@ from __future__ import annotations
 
 import argparse
 
-from common.data import load_yaml, read_jsonl
-from common.models import load_policy, load_reward_model, load_tokenizer
-
-
-def load_evaluation_bundle(config_path: str, adapter: str):
-    cfg = load_yaml(config_path)
-    return {
-        "cfg": cfg,
-        "rows": read_jsonl(cfg["paths"]["rl_prompt_eval"]),
-        "tokenizer": load_tokenizer(cfg["base_model"]),
-        "policy": load_policy(cfg, adapter_path=adapter, trainable=False),
-        "reward": load_reward_model(cfg),
-    }
+from common.rl_eval import evaluate_rl_policy
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="configs/ppo.yaml")
-    ap.add_argument("--adapter", required=True)
+    ap.add_argument("--adapter", required=True, help="adapter dir, or 'none' for the plain base model")
     ap.add_argument("--name", default="standard")
+    ap.add_argument("--limit", type=int, help="quick test: only the first N prompts")
+    ap.add_argument("--gen-batch", type=int, default=16)
     args = ap.parse_args()
-    load_evaluation_bundle(args.config, args.adapter)
-    raise NotImplementedError(
-        "TODO(student): implement the common held-out generation/evaluation protocol and save machine-readable metrics/examples."
-    )
+    evaluate_rl_policy(args.config, args.adapter, args.name, gen_batch=args.gen_batch, limit=args.limit)
 
 
 if __name__ == "__main__":

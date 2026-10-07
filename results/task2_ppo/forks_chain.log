@@ -1,0 +1,190 @@
+Required epsilon values: [0.05, 0.2, 0.5]
+cached batch: 32 rollouts, 8814 response tokens
+[noise floor, cached old log-probs] eps 0.05 : outside 0.1071 binding 0.0529 mean|rho-1| 0.03627
+[noise floor, cached old log-probs] eps 0.2  : outside 0.0083 binding 0.0045 mean|rho-1| 0.03627
+[noise floor, cached old log-probs] eps 0.5  : outside 0.0056 binding 0.0033 mean|rho-1| 0.03627
+lr x1.0  eps 0.05  step 0: outside 0.0000 binding 0.0000 surrogate -0.00002 (unclipped -0.00002) mean|rho-1| 0.00220 rho in [0.957,1.030]
+lr x1.0  eps 0.05  step 1: outside 0.0001 binding 0.0001 surrogate 0.00000 (unclipped 0.00000) mean|rho-1| 0.00227 rho in [0.970,1.054]
+lr x1.0  eps 0.05  step 2: outside 0.0000 binding 0.0000 surrogate 0.00000 (unclipped 0.00000) mean|rho-1| 0.00230 rho in [0.960,1.033]
+lr x1.0  eps 0.05  step 3: outside 0.0000 binding 0.0000 surrogate 0.00008 (unclipped 0.00008) mean|rho-1| 0.00228 rho in [0.960,1.039]
+lr x1.0  eps 0.05  step 4: outside 0.0000 binding 0.0000 surrogate 0.00008 (unclipped 0.00008) mean|rho-1| 0.00229 rho in [0.956,1.049]
+lr x1.0  eps 0.05  step 5: outside 0.0000 binding 0.0000 surrogate 0.00010 (unclipped 0.00010) mean|rho-1| 0.00230 rho in [0.957,1.046]
+lr x1.0  eps 0.2   step 0: outside 0.0000 binding 0.0000 surrogate -0.00002 (unclipped -0.00002) mean|rho-1| 0.00220 rho in [0.957,1.030]
+lr x1.0  eps 0.2   step 1: outside 0.0000 binding 0.0000 surrogate 0.00000 (unclipped 0.00000) mean|rho-1| 0.00227 rho in [0.970,1.054]
+lr x1.0  eps 0.2   step 2: outside 0.0000 binding 0.0000 surrogate 0.00004 (unclipped 0.00004) mean|rho-1| 0.00227 rho in [0.956,1.054]
+lr x1.0  eps 0.2   step 3: outside 0.0000 binding 0.0000 surrogate 0.00010 (unclipped 0.00010) mean|rho-1| 0.00227 rho in [0.957,1.046]
+lr x1.0  eps 0.2   step 4: outside 0.0000 binding 0.0000 surrogate 0.00008 (unclipped 0.00008) mean|rho-1| 0.00232 rho in [0.970,1.034]
+lr x1.0  eps 0.2   step 5: outside 0.0000 binding 0.0000 surrogate 0.00010 (unclipped 0.00010) mean|rho-1| 0.00227 rho in [0.956,1.039]
+lr x1.0  eps 0.5   step 0: outside 0.0000 binding 0.0000 surrogate -0.00002 (unclipped -0.00002) mean|rho-1| 0.00220 rho in [0.957,1.030]
+lr x1.0  eps 0.5   step 1: outside 0.0000 binding 0.0000 surrogate 0.00000 (unclipped 0.00000) mean|rho-1| 0.00227 rho in [0.970,1.054]
+lr x1.0  eps 0.5   step 2: outside 0.0000 binding 0.0000 surrogate 0.00004 (unclipped 0.00004) mean|rho-1| 0.00227 rho in [0.956,1.054]
+lr x1.0  eps 0.5   step 3: outside 0.0000 binding 0.0000 surrogate 0.00010 (unclipped 0.00010) mean|rho-1| 0.00227 rho in [0.957,1.046]
+lr x1.0  eps 0.5   step 4: outside 0.0000 binding 0.0000 surrogate 0.00008 (unclipped 0.00008) mean|rho-1| 0.00232 rho in [0.970,1.034]
+lr x1.0  eps 0.5   step 5: outside 0.0000 binding 0.0000 surrogate 0.00010 (unclipped 0.00010) mean|rho-1| 0.00227 rho in [0.956,1.039]
+lr x30.0 eps 0.05  step 0: outside 0.0000 binding 0.0000 surrogate -0.00002 (unclipped -0.00002) mean|rho-1| 0.00220 rho in [0.957,1.030]
+lr x30.0 eps 0.05  step 1: outside 0.0015 binding 0.0015 surrogate 0.00111 (unclipped 0.00115) mean|rho-1| 0.00281 rho in [0.924,1.126]
+lr x30.0 eps 0.05  step 2: outside 0.0044 binding 0.0044 surrogate 0.00250 (unclipped 0.00272) mean|rho-1| 0.00401 rho in [0.845,1.226]
+lr x30.0 eps 0.05  step 3: outside 0.0110 binding 0.0109 surrogate 0.00376 (unclipped 0.00426) mean|rho-1| 0.00541 rho in [0.788,1.223]
+lr x30.0 eps 0.05  step 4: outside 0.0199 binding 0.0196 surrogate 0.00482 (unclipped 0.00572) mean|rho-1| 0.00690 rho in [0.756,1.291]
+lr x30.0 eps 0.05  step 5: outside 0.0327 binding 0.0322 surrogate 0.00580 (unclipped 0.00719) mean|rho-1| 0.00844 rho in [0.726,1.376]
+lr x30.0 eps 0.2   step 0: outside 0.0000 binding 0.0000 surrogate -0.00002 (unclipped -0.00002) mean|rho-1| 0.00220 rho in [0.957,1.030]
+lr x30.0 eps 0.2   step 1: outside 0.0000 binding 0.0000 surrogate 0.00115 (unclipped 0.00115) mean|rho-1| 0.00281 rho in [0.924,1.126]
+lr x30.0 eps 0.2   step 2: outside 0.0003 binding 0.0003 surrogate 0.00278 (unclipped 0.00281) mean|rho-1| 0.00407 rho in [0.770,1.273]
+lr x30.0 eps 0.2   step 3: outside 0.0014 binding 0.0014 surrogate 0.00427 (unclipped 0.00441) mean|rho-1| 0.00559 rho in [0.696,1.376]
+lr x30.0 eps 0.2   step 4: outside 0.0017 binding 0.0017 surrogate 0.00592 (unclipped 0.00618) mean|rho-1| 0.00730 rho in [0.619,1.505]
+lr x30.0 eps 0.2   step 5: outside 0.0025 binding 0.0025 surrogate 0.00737 (unclipped 0.00780) mean|rho-1| 0.00908 rho in [0.592,1.622]
+lr x30.0 eps 0.5   step 0: outside 0.0000 binding 0.0000 surrogate -0.00002 (unclipped -0.00002) mean|rho-1| 0.00220 rho in [0.957,1.030]
+lr x30.0 eps 0.5   step 1: outside 0.0000 binding 0.0000 surrogate 0.00115 (unclipped 0.00115) mean|rho-1| 0.00281 rho in [0.924,1.126]
+lr x30.0 eps 0.5   step 2: outside 0.0000 binding 0.0000 surrogate 0.00281 (unclipped 0.00281) mean|rho-1| 0.00407 rho in [0.770,1.273]
+lr x30.0 eps 0.5   step 3: outside 0.0000 binding 0.0000 surrogate 0.00446 (unclipped 0.00446) mean|rho-1| 0.00566 rho in [0.659,1.467]
+lr x30.0 eps 0.5   step 4: outside 0.0002 binding 0.0002 surrogate 0.00612 (unclipped 0.00618) mean|rho-1| 0.00745 rho in [0.542,1.855]
+lr x30.0 eps 0.5   step 5: outside 0.0006 binding 0.0006 surrogate 0.00792 (unclipped 0.00804) mean|rho-1| 0.00930 rho in [0.467,2.062]
+run=fork_eps0.05_kl0.1 updates=8 eps=0.05 beta_kl=0.1 epochs=2 (1 of 8 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/8 reward 2.658 (eff 2.658) KL 0.0001 len 405 ent 1.036 clip 0.000 Lpi 0.0001 Lv 4.058 EV -1.92 gn 0.31/43.99 24s
+update 2/8 reward 3.131 (eff 3.131) KL 0.0003 len 489 ent 1.198 clip 0.000 Lpi 0.0001 Lv 5.268 EV -4.66 gn 0.23/62.66 27s
+update 3/8 reward -1.994 (eff -1.994) KL -0.0005 len 34 ent 0.247 clip 0.000 Lpi 0.0002 Lv 4.324 EV -18.31 gn 1.06/137.24 3s
+update 4/8 reward 2.576 (eff 2.576) KL -0.0002 len 105 ent 1.212 clip 0.000 Lpi 0.0002 Lv 3.146 EV -17.74 gn 1.04/55.07 8s
+update 5/8 reward -0.822 (eff -1.822) KL -0.0001 len 512 ent 0.710 clip 0.000 Lpi 0.0000 Lv 5.433 EV -1.61 gn 0.16/62.44 28s
+update 6/8 reward 2.025 (eff 2.025) KL 0.0000 len 211 ent 1.196 clip 0.000 Lpi -0.0005 Lv 3.176 EV -3.64 gn 0.36/52.32 12s
+update 7/8 reward -1.745 (eff -1.745) KL 0.0003 len 49 ent 0.882 clip 0.000 Lpi 0.0005 Lv 8.013 EV -8.35 gn 0.93/162.44 6s
+update 8/8 reward 1.427 (eff 1.427) KL -0.0001 len 461 ent 0.283 clip 0.000 Lpi 0.0000 Lv 4.675 EV -5.17 gn 0.16/48.96 26s
+/opt/anaconda3/envs/pa2/lib/python3.11/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B-Instruct - will assume that the vocabulary was not modified.
+  warnings.warn(
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task2_ppo/fork_eps0.05_kl0.1 | wall 134s | peak driver GB (sampled) 11.3
+[fork_eps0.05_kl0.1] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[fork_eps0.05_kl0.1] done in 1455s | reward 1.387 (eff 1.292) KL -0.00002 entropy 1.065 len 302.5+-248.6 trunc 0.095
+run=fork_eps0.2_kl0.1 updates=8 eps=0.2 beta_kl=0.1 epochs=2 (1 of 8 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/8 reward 2.658 (eff 2.658) KL 0.0001 len 405 ent 1.036 clip 0.000 Lpi 0.0001 Lv 4.058 EV -1.92 gn 0.31/43.99 22s
+update 2/8 reward 3.131 (eff 3.131) KL 0.0003 len 489 ent 1.198 clip 0.000 Lpi 0.0001 Lv 5.268 EV -4.66 gn 0.23/62.66 26s
+update 3/8 reward -1.994 (eff -1.994) KL -0.0005 len 34 ent 0.247 clip 0.000 Lpi 0.0002 Lv 4.324 EV -18.31 gn 1.06/137.24 3s
+update 4/8 reward 2.576 (eff 2.576) KL -0.0002 len 105 ent 1.212 clip 0.000 Lpi 0.0002 Lv 3.146 EV -17.74 gn 1.04/55.07 8s
+update 5/8 reward -0.822 (eff -1.822) KL -0.0001 len 512 ent 0.710 clip 0.000 Lpi 0.0000 Lv 5.433 EV -1.61 gn 0.16/62.44 28s
+update 6/8 reward 2.025 (eff 2.025) KL 0.0000 len 211 ent 1.196 clip 0.000 Lpi -0.0005 Lv 3.176 EV -3.64 gn 0.36/52.32 12s
+update 7/8 reward -1.745 (eff -1.745) KL 0.0003 len 49 ent 0.882 clip 0.000 Lpi 0.0005 Lv 8.013 EV -8.35 gn 0.93/162.44 6s
+update 8/8 reward 1.427 (eff 1.427) KL -0.0001 len 461 ent 0.283 clip 0.000 Lpi 0.0000 Lv 4.675 EV -5.17 gn 0.16/48.96 26s
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task2_ppo/fork_eps0.2_kl0.1 | wall 132s | peak driver GB (sampled) 11.3
+[fork_eps0.2_kl0.1] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[fork_eps0.2_kl0.1] done in 1453s | reward 1.387 (eff 1.292) KL -0.00002 entropy 1.065 len 302.5+-248.6 trunc 0.095
+run=fork_eps0.5_kl0.1 updates=8 eps=0.5 beta_kl=0.1 epochs=2 (1 of 8 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/8 reward 2.658 (eff 2.658) KL 0.0001 len 405 ent 1.036 clip 0.000 Lpi 0.0001 Lv 4.058 EV -1.92 gn 0.31/43.99 22s
+update 2/8 reward 3.131 (eff 3.131) KL 0.0003 len 489 ent 1.198 clip 0.000 Lpi 0.0001 Lv 5.268 EV -4.66 gn 0.23/62.66 26s
+update 3/8 reward -1.994 (eff -1.994) KL -0.0005 len 34 ent 0.247 clip 0.000 Lpi 0.0002 Lv 4.324 EV -18.31 gn 1.06/137.24 3s
+update 4/8 reward 2.576 (eff 2.576) KL -0.0002 len 105 ent 1.212 clip 0.000 Lpi 0.0002 Lv 3.146 EV -17.74 gn 1.04/55.07 8s
+update 5/8 reward -0.822 (eff -1.822) KL -0.0001 len 512 ent 0.710 clip 0.000 Lpi 0.0000 Lv 5.433 EV -1.61 gn 0.16/62.44 28s
+update 6/8 reward 2.025 (eff 2.025) KL 0.0000 len 211 ent 1.196 clip 0.000 Lpi -0.0005 Lv 3.176 EV -3.64 gn 0.36/52.32 12s
+update 7/8 reward -1.745 (eff -1.745) KL 0.0003 len 49 ent 0.882 clip 0.000 Lpi 0.0005 Lv 8.013 EV -8.35 gn 0.93/162.44 6s
+update 8/8 reward 1.427 (eff 1.427) KL -0.0001 len 461 ent 0.283 clip 0.000 Lpi 0.0000 Lv 4.675 EV -5.17 gn 0.16/48.96 26s
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task2_ppo/fork_eps0.5_kl0.1 | wall 132s | peak driver GB (sampled) 11.3
+[fork_eps0.5_kl0.1] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[fork_eps0.5_kl0.1] done in 1453s | reward 1.387 (eff 1.292) KL -0.00002 entropy 1.065 len 302.5+-248.6 trunc 0.095
+
+clipping_summary (reward change is paired over prompts vs the midpoint, with 95% bootstrap CI):
+  midpoint (start)           reward 1.342 (eff 1.237) d_raw +0.000 [+0.000,+0.000] KL -0.00005 ent 1.056 len 304+-248 trunc 0.105
+  SFT base                   reward 1.361 (eff 1.276) d_raw +0.019 [-0.064,+0.102] KL 0.00000 ent 1.053 len 298+-244 trunc 0.085
+  standard 20 updates        reward 1.337 (eff 1.262) d_raw -0.004 [-0.098,+0.088] KL -0.00002 ent 1.068 len 296+-242 trunc 0.075 | clip 0.0000 maxdev 0.0042 gnorm_max 2.29
+  fork eps=0.05              reward 1.387 (eff 1.292) d_raw +0.045 [-0.032,+0.116] KL -0.00002 ent 1.065 len 302+-249 trunc 0.095 | clip 0.0000 maxdev 0.0040 gnorm_max 1.06
+  fork eps=0.2               reward 1.387 (eff 1.292) d_raw +0.045 [-0.032,+0.116] KL -0.00002 ent 1.065 len 302+-249 trunc 0.095 | clip 0.0000 maxdev 0.0040 gnorm_max 1.06
+  fork eps=0.5               reward 1.387 (eff 1.292) d_raw +0.045 [-0.032,+0.116] KL -0.00002 ent 1.065 len 302+-249 trunc 0.095 | clip 0.0000 maxdev 0.0040 gnorm_max 1.06
+KL beta conditions: [0.0, 0.1, 0.2]
+Fork update budget: 8
+run=fork_eps0.2_kl0.0 updates=8 eps=0.2 beta_kl=0.0 epochs=2 (1 of 8 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/8 reward 2.658 (eff 2.658) KL 0.0001 len 405 ent 1.036 clip 0.000 Lpi 0.0001 Lv 4.059 EV -1.92 gn 0.31/44.00 22s
+update 2/8 reward 3.131 (eff 3.131) KL -0.0000 len 489 ent 1.198 clip 0.000 Lpi -0.0001 Lv 5.268 EV -4.67 gn 0.22/62.57 26s
+update 3/8 reward -1.994 (eff -1.994) KL -0.0000 len 34 ent 0.247 clip 0.000 Lpi -0.0001 Lv 4.316 EV -18.22 gn 1.06/136.25 3s
+update 4/8 reward 2.576 (eff 2.576) KL -0.0001 len 105 ent 1.212 clip 0.000 Lpi 0.0005 Lv 3.148 EV -17.75 gn 1.03/55.26 8s
+update 5/8 reward -0.181 (eff -1.181) KL 0.0001 len 512 ent 0.655 clip 0.000 Lpi 0.0000 Lv 5.093 EV -2.54 gn 0.19/66.04 28s
+update 6/8 reward 2.025 (eff 2.025) KL -0.0004 len 211 ent 1.195 clip 0.000 Lpi -0.0000 Lv 3.176 EV -3.66 gn 0.36/51.31 12s
+update 7/8 reward -1.745 (eff -1.745) KL -0.0003 len 49 ent 0.882 clip 0.000 Lpi 0.0009 Lv 8.016 EV -8.37 gn 0.92/162.18 6s
+update 8/8 reward 1.427 (eff 1.427) KL -0.0001 len 461 ent 0.282 clip 0.000 Lpi -0.0000 Lv 4.667 EV -5.09 gn 0.16/48.79 26s
+/opt/anaconda3/envs/pa2/lib/python3.11/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B-Instruct - will assume that the vocabulary was not modified.
+  warnings.warn(
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task2_ppo/fork_eps0.2_kl0.0 | wall 132s | peak driver GB (sampled) 11.3
+[fork_eps0.2_kl0.0] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[fork_eps0.2_kl0.0] done in 1477s | reward 1.323 (eff 1.208) KL 0.00002 entropy 1.053 len 313.4+-259.1 trunc 0.115
+[skip] training for fork_eps0.2_kl0.1 already done
+[skip] evaluation for fork_eps0.2_kl0.1 already done
+run=fork_eps0.2_kl0.2 updates=8 eps=0.2 beta_kl=0.2 epochs=2 (1 of 8 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/8 reward 2.658 (eff 2.658) KL 0.0001 len 405 ent 1.036 clip 0.000 Lpi 0.0000 Lv 4.060 EV -1.92 gn 0.31/43.97 22s
+update 2/8 reward 1.667 (eff 0.667) KL -0.0000 len 512 ent 1.341 clip 0.000 Lpi 0.0000 Lv 4.957 EV -11.41 gn 0.22/66.72 28s
+update 3/8 reward -1.994 (eff -1.994) KL 0.0000 len 34 ent 0.247 clip 0.000 Lpi 0.0006 Lv 4.128 EV -20.08 gn 1.04/120.62 3s
+update 4/8 reward 2.576 (eff 2.576) KL -0.0001 len 105 ent 1.212 clip 0.000 Lpi 0.0003 Lv 3.171 EV -16.90 gn 1.05/57.71 8s
+update 5/8 reward -0.165 (eff -1.165) KL -0.0000 len 512 ent 0.679 clip 0.000 Lpi 0.0000 Lv 7.342 EV -5.81 gn 0.21/66.94 28s
+update 6/8 reward 2.025 (eff 2.025) KL -0.0006 len 211 ent 1.195 clip 0.000 Lpi 0.0001 Lv 3.097 EV -3.27 gn 0.36/52.53 12s
+update 7/8 reward -1.745 (eff -1.745) KL 0.0007 len 49 ent 0.883 clip 0.000 Lpi 0.0007 Lv 8.029 EV -7.75 gn 0.91/166.73 6s
+update 8/8 reward 1.427 (eff 1.427) KL 0.0001 len 461 ent 0.283 clip 0.000 Lpi 0.0001 Lv 4.706 EV -5.27 gn 0.16/49.05 26s
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task2_ppo/fork_eps0.2_kl0.2 | wall 134s | peak driver GB (sampled) 11.3
+[fork_eps0.2_kl0.2] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[fork_eps0.2_kl0.2] done in 1457s | reward 1.383 (eff 1.278) KL -0.00000 entropy 1.045 len 306.1+-252.4 trunc 0.105
+
+kl_summary (reward change is paired over prompts vs the midpoint, with 95% bootstrap CI):
+  midpoint (start)           reward 1.342 (eff 1.237) d_raw +0.000 [+0.000,+0.000] KL -0.00005 ent 1.056 len 304+-248 trunc 0.105
+  SFT base                   reward 1.361 (eff 1.276) d_raw +0.019 [-0.064,+0.102] KL 0.00000 ent 1.053 len 298+-244 trunc 0.085
+  standard 20 updates        reward 1.337 (eff 1.262) d_raw -0.004 [-0.098,+0.088] KL -0.00002 ent 1.068 len 296+-242 trunc 0.075 | clip 0.0000 maxdev 0.0042 gnorm_max 2.29
+  fork beta_KL=0.0           reward 1.323 (eff 1.208) d_raw -0.019 [-0.095,+0.060] KL 0.00002 ent 1.053 len 313+-259 trunc 0.115 | clip 0.0000 maxdev 0.0036 gnorm_max 1.06
+  fork beta_KL=0.1           reward 1.387 (eff 1.292) d_raw +0.045 [-0.032,+0.116] KL -0.00002 ent 1.065 len 302+-249 trunc 0.095 | clip 0.0000 maxdev 0.0040 gnorm_max 1.06
+  fork beta_KL=0.2           reward 1.383 (eff 1.278) d_raw +0.041 [-0.046,+0.131] KL -0.00001 ent 1.045 len 306+-252 trunc 0.105 | clip 0.0000 maxdev 0.0037 gnorm_max 1.05
