@@ -1,0 +1,24 @@
+run=standard updates=20 eps=0.2 beta_kl=0.1 epochs=2 (3 of 20 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/20 reward 2.658 (eff 2.658) KL 0.0001 len 405 ent 1.036 clip 0.000 Lpi 0.0001 Lv 4.058 EV -1.92 gn 0.31/43.99 24s
+update 2/20 reward 3.131 (eff 3.131) KL 0.0003 len 489 ent 1.198 clip 0.000 Lpi 0.0001 Lv 5.268 EV -4.66 gn 0.23/62.66 28s
+update 3/20 reward -1.994 (eff -1.994) KL -0.0005 len 34 ent 0.247 clip 0.000 Lpi 0.0002 Lv 4.324 EV -18.31 gn 1.06/137.24 4s
+update 4/20 reward 2.576 (eff 2.576) KL -0.0002 len 105 ent 1.212 clip 0.000 Lpi 0.0002 Lv 3.146 EV -17.74 gn 1.04/55.07 9s
+update 5/20 reward -0.822 (eff -1.822) KL -0.0001 len 512 ent 0.710 clip 0.000 Lpi 0.0000 Lv 5.433 EV -1.61 gn 0.16/62.44 31s
+update 6/20 reward 2.025 (eff 2.025) KL 0.0000 len 211 ent 1.196 clip 0.000 Lpi -0.0005 Lv 3.176 EV -3.64 gn 0.36/52.32 13s
+update 7/20 reward -1.745 (eff -1.745) KL 0.0003 len 49 ent 0.882 clip 0.000 Lpi 0.0005 Lv 8.013 EV -8.35 gn 0.93/162.44 7s
+update 8/20 reward 1.427 (eff 1.427) KL -0.0001 len 461 ent 0.283 clip 0.000 Lpi 0.0000 Lv 4.675 EV -5.17 gn 0.16/48.96 26s
+update 9/20 reward 2.406 (eff 2.406) KL 0.0008 len 197 ent 1.082 clip 0.000 Lpi 0.0002 Lv 4.129 EV -2.69 gn 0.41/67.32 12s
+update 10/20 reward 1.959 (eff 1.959) KL -0.0007 len 87 ent 0.234 clip 0.000 Lpi 0.0001 Lv 3.844 EV -3.51 gn 0.30/149.34 7s
+update 11/20 reward 2.473 (eff 2.473) KL 0.0001 len 262 ent 0.233 clip 0.000 Lpi 0.0000 Lv 3.779 EV -1.51 gn 0.16/61.02 17s
+update 12/20 reward 2.621 (eff 2.621) KL 0.0000 len 429 ent 1.053 clip 0.000 Lpi 0.0004 Lv 4.568 EV -4.06 gn 0.22/76.39 24s
+update 13/20 reward 1.734 (eff 0.734) KL 0.0004 len 512 ent 1.114 clip 0.000 Lpi 0.0001 Lv 3.594 EV -13.28 gn 0.21/47.32 30s
+update 14/20 reward 1.179 (eff 0.179) KL 0.0003 len 512 ent 1.416 clip 0.000 Lpi 0.0001 Lv 4.092 EV -4.79 gn 0.23/66.52 28s
+update 15/20 reward -0.783 (eff -1.783) KL -0.0003 len 512 ent 0.741 clip 0.000 Lpi 0.0000 Lv 2.508 EV -4.18 gn 0.20/57.61 29s
+update 16/20 reward -0.447 (eff -0.447) KL 0.0001 len 346 ent 2.328 clip 0.000 Lpi -0.0001 Lv 2.378 EV -13.70 gn 0.31/39.02 23s
+update 17/20 reward -0.890 (eff -1.890) KL -0.0003 len 512 ent 0.794 clip 0.000 Lpi -0.0001 Lv 4.611 EV -12.44 gn 0.17/84.70 29s
+update 18/20 reward 1.559 (eff 1.559) KL 0.0007 len 67 ent 0.801 clip 0.000 Lpi -0.0012 Lv 1.855 EV -59.75 gn 0.96/44.47 8s
+update 19/20 reward -0.158 (eff -0.158) KL -0.0002 len 282 ent 2.453 clip 0.000 Lpi -0.0002 Lv 2.806 EV -5.93 gn 0.25/50.09 20s
+update 20/20 reward 0.073 (eff 0.073) KL 0.0006 len 19 ent 0.705 clip 0.000 Lpi 0.0010 Lv 1.981 EV -31.58 gn 2.29/110.24 3s
+/opt/anaconda3/envs/pa2/lib/python3.11/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B-Instruct - will assume that the vocabulary was not modified.
+  warnings.warn(
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task2_ppo/standard | wall 372s | peak driver GB (sampled) 12.3
