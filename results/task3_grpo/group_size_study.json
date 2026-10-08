@@ -1,0 +1,299 @@
+{
+  "rows": [
+    {
+      "n_groups": 96,
+      "informative_rate": 0.9375,
+      "mean_group_std": 0.3845672607421875,
+      "var_relative_signal": 0.3368348789711793,
+      "weak_signal_rate": 0.11458333333333333,
+      "informative_rate_ci": [
+        0.8333333333333334,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.26836109161376953,
+        0.5304978052775065
+      ],
+      "K": 2,
+      "bin": "all",
+      "n_prompts": 24,
+      "n_generations": 192,
+      "random_partition_informative_rate_mean": 0.94765625,
+      "random_partition_mean_group_std_mean": 0.3882425435384114,
+      "random_partition_mean_group_std_sd": 0.02748631499287623
+    },
+    {
+      "n_groups": 32,
+      "informative_rate": 0.84375,
+      "mean_group_std": 0.49340057373046875,
+      "var_relative_signal": 0.5984376166015863,
+      "weak_signal_rate": 0.1875,
+      "informative_rate_ci": [
+        0.59375,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.23052825927734374,
+        0.8597640991210938
+      ],
+      "K": 2,
+      "bin": "hard",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 32,
+      "informative_rate": 0.96875,
+      "mean_group_std": 0.41237640380859375,
+      "var_relative_signal": 0.3040905836969614,
+      "weak_signal_rate": 0.09375,
+      "informative_rate_ci": [
+        0.90625,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.2523681640625,
+        0.6067171096801758
+      ],
+      "K": 2,
+      "bin": "medium",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 32,
+      "informative_rate": 1.0,
+      "mean_group_std": 0.2479248046875,
+      "var_relative_signal": 0.10797643661499023,
+      "weak_signal_rate": 0.0625,
+      "informative_rate_ci": [
+        1.0,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.167340087890625,
+        0.3455108642578122
+      ],
+      "K": 2,
+      "bin": "easy",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 48,
+      "informative_rate": 0.9583333333333334,
+      "mean_group_std": 0.5410043647319412,
+      "var_relative_signal": 0.4677260586371024,
+      "weak_signal_rate": 0.041666666666666664,
+      "informative_rate_ci": [
+        0.875,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.40138806598295995,
+        0.7122728349589915
+      ],
+      "K": 4,
+      "bin": "all",
+      "n_prompts": 24,
+      "n_generations": 192,
+      "random_partition_informative_rate_mean": 0.9583333333333335,
+      "random_partition_mean_group_std_mean": 0.5494217206217284,
+      "random_partition_mean_group_std_sd": 0.017867862422277767
+    },
+    {
+      "n_groups": 16,
+      "informative_rate": 0.875,
+      "mean_group_std": 0.6614877562072954,
+      "var_relative_signal": 0.786526813171804,
+      "weak_signal_rate": 0.125,
+      "informative_rate_ci": [
+        0.625,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.3129822454518611,
+        1.09192388332417
+      ],
+      "K": 4,
+      "bin": "hard",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 16,
+      "informative_rate": 1.0,
+      "mean_group_std": 0.5516941225351226,
+      "var_relative_signal": 0.4017186826094985,
+      "weak_signal_rate": 0.0,
+      "informative_rate_ci": [
+        1.0,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.36733538178361835,
+        0.7615211537918
+      ],
+      "K": 4,
+      "bin": "medium",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 16,
+      "informative_rate": 1.0,
+      "mean_group_std": 0.40983121545340573,
+      "var_relative_signal": 0.21493268013000488,
+      "weak_signal_rate": 0.0,
+      "informative_rate_ci": [
+        1.0,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.2789736940822806,
+        0.547147627175757
+      ],
+      "K": 4,
+      "bin": "easy",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 24,
+      "informative_rate": 0.9583333333333334,
+      "mean_group_std": 0.6190544134665205,
+      "var_relative_signal": 0.5598951438441873,
+      "weak_signal_rate": 0.041666666666666664,
+      "informative_rate_ci": [
+        0.875,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.4647018136499964,
+        0.8033358675693792
+      ],
+      "K": 8,
+      "bin": "all",
+      "n_prompts": 24,
+      "n_generations": 192,
+      "random_partition_informative_rate_mean": 0.9583333333333335,
+      "random_partition_mean_group_std_mean": 0.6190544134665206,
+      "random_partition_mean_group_std_sd": 1.1102230246251565e-16
+    },
+    {
+      "n_groups": 8,
+      "informative_rate": 0.875,
+      "mean_group_std": 0.7633688437029319,
+      "var_relative_signal": 0.8869009069167078,
+      "weak_signal_rate": 0.125,
+      "informative_rate_ci": [
+        0.625,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.4080756410211448,
+        1.1938339137751643
+      ],
+      "K": 8,
+      "bin": "hard",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 8,
+      "informative_rate": 1.0,
+      "mean_group_std": 0.5990220788024174,
+      "var_relative_signal": 0.44691224163398147,
+      "weak_signal_rate": 0.0,
+      "informative_rate_ci": [
+        1.0,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.4060048495556376,
+        0.8108140645168966
+      ],
+      "K": 8,
+      "bin": "medium",
+      "n_prompts": 8,
+      "n_generations": 64
+    },
+    {
+      "n_groups": 8,
+      "informative_rate": 1.0,
+      "mean_group_std": 0.49477231789421244,
+      "var_relative_signal": 0.34587228298187256,
+      "weak_signal_rate": 0.0,
+      "informative_rate_ci": [
+        1.0,
+        1.0
+      ],
+      "mean_group_std_ci": [
+        0.30010450201601085,
+        0.7483624723577368
+      ],
+      "K": 8,
+      "bin": "easy",
+      "n_prompts": 8,
+      "n_generations": 64
+    }
+  ],
+  "difficulty_bins": {
+    "671": "hard",
+    "495": "hard",
+    "457": "hard",
+    "961": "hard",
+    "953": "hard",
+    "175": "hard",
+    "936": "hard",
+    "280": "hard",
+    "254": "medium",
+    "796": "medium",
+    "510": "medium",
+    "873": "medium",
+    "436": "medium",
+    "981": "medium",
+    "124": "medium",
+    "922": "medium",
+    "263": "easy",
+    "185": "easy",
+    "832": "easy",
+    "942": "easy",
+    "184": "easy",
+    "463": "easy",
+    "755": "easy",
+    "507": "easy"
+  },
+  "prompt_mean_reward": {
+    "124": 2.375,
+    "671": -1.45556640625,
+    "510": 1.86572265625,
+    "981": 2.2646484375,
+    "175": 0.7420654296875,
+    "185": 2.4599609375,
+    "953": 0.73388671875,
+    "873": 2.1845703125,
+    "796": 1.81658935546875,
+    "263": 2.4296875,
+    "507": 3.220703125,
+    "961": -0.1944580078125,
+    "280": 1.2734375,
+    "936": 0.8939208984375,
+    "254": 1.3321533203125,
+    "463": 3.00390625,
+    "436": 2.212890625,
+    "942": 2.6875,
+    "184": 2.966796875,
+    "922": 2.4169921875,
+    "755": 3.072265625,
+    "457": -0.85198974609375,
+    "832": 2.65625,
+    "495": -1.42041015625
+  },
+  "rules": {
+    "regrouping": "consecutive groups of K over generation_index order, per prompt",
+    "difficulty": "terciles of per-prompt mean reward over the 8 cached completions",
+    "tolerance": 1e-06,
+    "weak_signal_threshold": 0.05
+  }
+}
