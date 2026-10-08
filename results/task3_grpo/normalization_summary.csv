@@ -1,0 +1,6 @@
+condition,name,n_prompts,heldout_reward_raw,delta_vs_midpoint,delta_ci_lo,delta_ci_hi,kl_token_mean,entropy_token_mean,len_mean,len_std,frac_truncated,train_updates,train_mean_reward,train_mean_group_std,train_uninformative_frac,train_mean_grad_norm,train_mean_clip_fraction,train_mean_completion_len,diag_updates,diag_gradnorm_per_adv_short,diag_gradnorm_per_adv_long,diag_ratio_long_over_short_median,diag_mean_len_short,diag_mean_len_long,token_weight_short,token_weight_long
+midpoint (start),midpoint,200,1.4096,0.0,0.0,0.0,2.6e-05,1.0573,300.0,247.5,0.085,,,,,,,,,,,,,,,
+SFT base,sft,200,1.361,-0.0486,-0.1272,0.0286,0.0,1.053,298.2,244.2,0.085,,,,,,,,,,,,,,,
+standard 20 updates (GRPO),standard,200,1.3244,-0.0851,-0.1927,0.0118,9.5e-05,1.0587,306.4,249.5,0.085,20,0.9883,0.6593,0.0,0.6631,0.0,284.3,17,0.47793,0.15188,0.8479,186.1,274.2,0.031333,0.008997
+fork canonical GRPO (1/T),fork_grpo,200,1.3553,-0.0542,-0.1337,0.0233,2e-05,1.0423,307.3,250.4,0.09,8,0.8432,0.6798,0.0,0.2896,0.0,269.5,7,0.17666,0.17285,0.868,178.9,250.4,0.012252,0.008753
+fork Dr. GRPO (1/Lmax),fork_dr_grpo,200,1.368,-0.0415,-0.138,0.0452,2.6e-05,1.0507,297.7,244.5,0.08,8,0.7579,0.5289,0.0,0.0678,0.0,265.1,7,0.03757,0.04848,1.4294,179.6,289.3,0.001953,0.001953

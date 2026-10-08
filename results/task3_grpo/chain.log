@@ -1,0 +1,131 @@
+Fork updates: 8
+Comparing loss_type='grpo' vs loss_type='dr_grpo' from the identical supplied midpoint.
+run=smoke_fork_grpo loss_type=grpo updates=1 K=4 eps=0.2 beta=0.1 (0 of 1 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/1 reward 1.938 std 0.310 KL -0.0001 len 444 trunc 0.00 ent 0.983 loss -0.0000 gn 0.12 50s | gnorm short/long 0.070/0.029 (len 407/498)
+/opt/anaconda3/envs/pa2/lib/python3.11/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B-Instruct - will assume that the vocabulary was not modified.
+  warnings.warn(
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task3_grpo/smoke_fork_grpo | wall 50s | peak driver GB (sampled) 22.2 | uninformative groups 0/1
+[smoke_fork_grpo] evaluating on 4 held-out prompts, max_new_tokens=768
+  4/4
+[smoke_fork_grpo] done in 27s | reward 1.938 (eff 1.938) KL -0.00018 entropy 0.830 len 222.5+-121.6 trunc 0.000
+run=smoke_fork_dr_grpo loss_type=dr_grpo updates=1 K=4 eps=0.2 beta=0.1 (0 of 1 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/1 reward 1.938 std 0.310 KL -0.0001 len 444 trunc 0.00 ent 0.983 loss -0.0002 gn 0.10 53s | gnorm short/long 0.055/0.028 (len 407/498)
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task3_grpo/smoke_fork_dr_grpo | wall 53s | peak driver GB (sampled) 22.2 | uninformative groups 0/1
+[smoke_fork_dr_grpo] evaluating on 4 held-out prompts, max_new_tokens=768
+  4/4
+[smoke_fork_dr_grpo] done in 28s | reward 1.968 (eff 1.968) KL -0.00011 entropy 0.835 len 222.5+-121.6 trunc 0.000
+run=standard loss_type=grpo updates=20 K=4 eps=0.2 beta=0.1 (3 of 20 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/20 reward 1.938 std 0.310 KL -0.0001 len 444 trunc 0.00 ent 0.983 loss -0.0000 gn 0.12 54s | gnorm short/long 0.070/0.029 (len 407/498)
+update 2/20 reward 2.680 std 0.551 KL -0.0000 len 354 trunc 0.25 ent 1.253 loss -0.4034 gn 0.10 48s | gnorm short/long 0.007/0.080 (len 254/336)
+update 3/20 reward -1.512 std 0.432 KL 0.0002 len 46 trunc 0.00 ent 0.380 loss -0.0002 gn 0.44 7s | gnorm short/long 0.014/0.311 (len 43/49)
+update 4/20 reward 1.541 std 0.327 KL -0.0003 len 44 trunc 0.00 ent 1.537 loss 0.0001 gn 0.96 10s | gnorm short/long 0.111/0.754 (len 38/49)
+update 5/20 reward 0.497 std 0.687 KL -0.0001 len 512 trunc 1.00 ent 0.658 loss 0.0000 gn 0.00 40s
+update 6/20 reward 1.545 std 1.599 KL 0.0002 len 266 trunc 0.25 ent 1.017 loss -0.4278 gn 0.14 46s | gnorm short/long 0.103/0.044 (len 167/214)
+update 7/20 reward -1.232 std 0.913 KL -0.0001 len 70 trunc 0.00 ent 0.832 loss -0.0004 gn 0.48 21s | gnorm short/long 0.189/0.378 (len 49/114)
+update 8/20 reward 1.289 std 0.618 KL 0.0001 len 420 trunc 0.25 ent 0.319 loss 0.1627 gn 0.08 55s | gnorm short/long 0.048/0.067 (len 294/493)
+update 9/20 reward 1.938 std 0.256 KL 0.0006 len 120 trunc 0.00 ent 1.221 loss 0.0001 gn 0.23 20s | gnorm short/long 0.080/0.196 (len 76/200)
+update 10/20 reward 1.543 std 0.732 KL -0.0000 len 133 trunc 0.00 ent 0.472 loss -0.0000 gn 0.18 20s | gnorm short/long 0.090/0.147 (len 92/193)
+update 11/20 reward 2.694 std 0.116 KL -0.0001 len 238 trunc 0.00 ent 0.252 loss 0.0001 gn 0.09 24s | gnorm short/long 0.058/0.082 (len 227/252)
+update 12/20 reward 2.674 std 0.111 KL 0.0000 len 374 trunc 0.00 ent 1.038 loss 0.0001 gn 0.14 41s | gnorm short/long 0.103/0.002 (len 297/464)
+update 13/20 reward 2.142 std 0.383 KL -0.0001 len 512 trunc 1.00 ent 1.166 loss 0.0000 gn 0.00 41s
+update 14/20 reward 3.181 std 0.268 KL -0.0000 len 355 trunc 0.00 ent 1.502 loss -0.0001 gn 0.13 44s | gnorm short/long 0.007/0.104 (len 229/475)
+update 15/20 reward 0.022 std 0.428 KL -0.0000 len 512 trunc 1.00 ent 0.796 loss 0.0000 gn 0.00 36s
+update 16/20 reward -0.624 std 0.641 KL -0.0002 len 363 trunc 0.50 ent 2.341 loss 0.1459 gn 0.16 71s | gnorm short/long 0.153/0.106 (len 199/229)
+update 17/20 reward 1.845 std 0.585 KL -0.0000 len 510 trunc 0.50 ent 0.728 loss -0.4108 gn 0.09 51s | gnorm short/long 0.086/0.012 (len 505/510)
+update 18/20 reward 0.943 std 1.241 KL 0.0000 len 35 trunc 0.00 ent 1.069 loss 0.0052 gn 9.18 16s | gnorm short/long 9.129/0.205 (len 3/67)
+update 19/20 reward -3.318 std 2.670 KL 0.0001 len 363 trunc 0.00 ent 2.346 loss 0.0001 gn 0.13 66s | gnorm short/long 0.084/0.121 (len 269/499)
+update 20/20 reward -0.021 std 0.317 KL 0.0002 len 17 trunc 0.00 ent 0.699 loss 0.0005 gn 0.62 10s | gnorm short/long 0.376/0.396 (len 15/20)
+/opt/anaconda3/envs/pa2/lib/python3.11/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B-Instruct - will assume that the vocabulary was not modified.
+  warnings.warn(
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task3_grpo/standard | wall 724s | peak driver GB (sampled) 27.4 | uninformative groups 0/20
+[midpoint] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[midpoint] done in 1462s | reward 1.410 (eff 1.410) KL 0.00003 entropy 1.057 len 300.0+-247.5 trunc 0.085
+[standard] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[standard] done in 1463s | reward 1.324 (eff 1.324) KL 0.00010 entropy 1.059 len 306.4+-249.5 trunc 0.085
+Fork updates: 8
+Comparing loss_type='grpo' vs loss_type='dr_grpo' from the identical supplied midpoint.
+run=fork_grpo loss_type=grpo updates=8 K=4 eps=0.2 beta=0.1 (1 of 8 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/8 reward 1.938 std 0.310 KL -0.0001 len 444 trunc 0.00 ent 0.983 loss -0.0000 gn 0.12 48s | gnorm short/long 0.070/0.029 (len 407/498)
+update 2/8 reward 2.680 std 0.551 KL -0.0000 len 354 trunc 0.25 ent 1.253 loss -0.4034 gn 0.10 46s | gnorm short/long 0.007/0.080 (len 254/336)
+update 3/8 reward -1.512 std 0.432 KL 0.0002 len 46 trunc 0.00 ent 0.380 loss -0.0002 gn 0.44 6s | gnorm short/long 0.014/0.311 (len 43/49)
+update 4/8 reward 1.541 std 0.327 KL -0.0003 len 44 trunc 0.00 ent 1.537 loss 0.0001 gn 0.96 10s | gnorm short/long 0.111/0.754 (len 38/49)
+update 5/8 reward 0.497 std 0.687 KL -0.0001 len 512 trunc 1.00 ent 0.658 loss 0.0000 gn 0.00 40s
+update 6/8 reward 1.545 std 1.599 KL 0.0002 len 266 trunc 0.25 ent 1.017 loss -0.4278 gn 0.14 46s | gnorm short/long 0.103/0.044 (len 167/214)
+update 7/8 reward -1.232 std 0.913 KL -0.0001 len 70 trunc 0.00 ent 0.832 loss -0.0004 gn 0.48 21s | gnorm short/long 0.189/0.378 (len 49/114)
+update 8/8 reward 1.289 std 0.618 KL 0.0001 len 420 trunc 0.25 ent 0.319 loss 0.1627 gn 0.08 52s | gnorm short/long 0.048/0.067 (len 294/493)
+/opt/anaconda3/envs/pa2/lib/python3.11/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B-Instruct - will assume that the vocabulary was not modified.
+  warnings.warn(
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task3_grpo/fork_grpo | wall 270s | peak driver GB (sampled) 23.8 | uninformative groups 0/8
+[fork_grpo] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[fork_grpo] done in 1469s | reward 1.355 (eff 1.355) KL 0.00002 entropy 1.042 len 307.3+-250.4 trunc 0.090
+run=fork_dr_grpo loss_type=dr_grpo updates=8 K=4 eps=0.2 beta=0.1 (1 of 8 prompts exceed 256 tokens and are truncated, as in the release)
+update 1/8 reward 1.938 std 0.310 KL -0.0001 len 444 trunc 0.00 ent 0.983 loss -0.0002 gn 0.10 48s | gnorm short/long 0.055/0.028 (len 407/498)
+update 2/8 reward 2.713 std 0.589 KL 0.0003 len 359 trunc 0.25 ent 1.266 loss -0.2649 gn 0.07 46s | gnorm short/long 0.001/0.062 (len 254/358)
+update 3/8 reward -1.567 std 0.455 KL -0.0001 len 45 trunc 0.00 ent 0.365 loss -0.0033 gn 0.05 6s | gnorm short/long 0.001/0.031 (len 43/49)
+update 4/8 reward 1.541 std 0.327 KL -0.0008 len 44 trunc 0.00 ent 1.537 loss -0.0020 gn 0.09 10s | gnorm short/long 0.008/0.072 (len 38/49)
+update 5/8 reward -0.035 std 0.370 KL 0.0000 len 512 trunc 1.00 ent 0.662 loss 0.0000 gn 0.00 40s
+update 6/8 reward 1.866 std 0.434 KL -0.0000 len 261 trunc 0.00 ent 1.032 loss 0.0301 gn 0.07 42s | gnorm short/long 0.033/0.014 (len 172/464)
+update 7/8 reward -1.220 std 0.905 KL -0.0003 len 69 trunc 0.00 ent 0.834 loss -0.0502 gn 0.09 21s | gnorm short/long 0.018/0.084 (len 49/114)
+update 8/8 reward 0.827 std 0.841 KL 0.0002 len 386 trunc 0.00 ent 0.310 loss 0.1251 gn 0.07 55s | gnorm short/long 0.035/0.025 (len 294/493)
+saved adapter to /Users/mac/Desktop/LUMS/sem 5/ATML/PA2/pa2-llm-posttraining/outputs/task3_grpo/fork_dr_grpo | wall 269s | peak driver GB (sampled) 23.0 | uninformative groups 0/8
+[fork_dr_grpo] evaluating on 200 held-out prompts, max_new_tokens=768
+  16/200
+  32/200
+  48/200
+  64/200
+  80/200
+  96/200
+  112/200
+  128/200
+  144/200
+  160/200
+  176/200
+  192/200
+  200/200
+[fork_dr_grpo] done in 1455s | reward 1.368 (eff 1.368) KL 0.00003 entropy 1.051 len 297.7+-244.5 trunc 0.080
+
+normalization_summary (reward change is paired over prompts vs the midpoint, with 95% bootstrap CI):
+  midpoint (start)           reward 1.410 d +0.000 [+0.000,+0.000] KL 0.00003 ent 1.057 len 300+-248 trunc 0.085
+  SFT base                   reward 1.361 d -0.049 [-0.127,+0.029] KL 0.00000 ent 1.053 len 298+-244 trunc 0.085
+  standard 20 updates (GRPO) reward 1.324 d -0.085 [-0.193,+0.012] KL 0.00010 ent 1.059 len 306+-250 trunc 0.085 | grad-norm per unit advantage short/long 0.4779/0.1519 (median long/short 0.85, lens 186/274)
+  fork canonical GRPO (1/T)  reward 1.355 d -0.054 [-0.134,+0.023] KL 0.00002 ent 1.042 len 307+-250 trunc 0.090 | grad-norm per unit advantage short/long 0.1767/0.1729 (median long/short 0.87, lens 179/250)
+  fork Dr. GRPO (1/Lmax)     reward 1.368 d -0.042 [-0.138,+0.045] KL 0.00003 ent 1.051 len 298+-244 trunc 0.080 | grad-norm per unit advantage short/long 0.0376/0.0485 (median long/short 1.43, lens 180/289)
