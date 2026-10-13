@@ -1,0 +1,93 @@
+{
+  "dataset": "transfer",
+  "policies": {
+    "sft": {
+      "n": 100,
+      "accuracy": 0.45,
+      "accuracy_ci": [
+        0.3561437510640347,
+        0.5475557296835656
+      ],
+      "format_compliance": 0.58,
+      "len_tokens_mean": 163.78,
+      "len_tokens_std": 71.9065476851726,
+      "frac_truncated": 0.0,
+      "failure_types": {
+        "no_designated_final": 42,
+        "correct": 45,
+        "wrong_final": 7,
+        "wrong_final_gold_in_text": 6
+      }
+    },
+    "rlvr": {
+      "n": 100,
+      "accuracy": 0.44,
+      "accuracy_ci": [
+        0.34671865400968327,
+        0.537720722887437
+      ],
+      "format_compliance": 0.57,
+      "len_tokens_mean": 162.91,
+      "len_tokens_std": 70.13046342353657,
+      "frac_truncated": 0.0,
+      "failure_types": {
+        "no_designated_final": 43,
+        "correct": 44,
+        "wrong_final": 7,
+        "wrong_final_gold_in_text": 6
+      }
+    },
+    "rlaif": {
+      "n": 100,
+      "accuracy": 0.41,
+      "accuracy_ci": [
+        0.31867157095664655,
+        0.5079874943890338
+      ],
+      "format_compliance": 0.54,
+      "len_tokens_mean": 164.82,
+      "len_tokens_std": 71.7937852463568,
+      "frac_truncated": 0.0,
+      "failure_types": {
+        "no_designated_final": 46,
+        "correct": 41,
+        "wrong_final": 7,
+        "wrong_final_gold_in_text": 6
+      }
+    }
+  },
+  "pairwise_vs_sft": {
+    "rlvr": {
+      "n": 100,
+      "win_rate_vs_sft": 0.555,
+      "win_rate_ci": [
+        0.465,
+        0.645
+      ],
+      "wins": 50,
+      "ties": 11,
+      "losses": 39,
+      "verifier_judge_agreement_3way": 0.12,
+      "n_verifier_discordant": 3,
+      "discordant_judge_picks_verifier_choice": 0.6666666666666666,
+      "discordant_judge_tie": 0.3333333333333333,
+      "discordant_judge_opposes_verifier": 0.0
+    },
+    "rlaif": {
+      "n": 100,
+      "win_rate_vs_sft": 0.545,
+      "win_rate_ci": [
+        0.45487500000000003,
+        0.635
+      ],
+      "wins": 49,
+      "ties": 11,
+      "losses": 40,
+      "verifier_judge_agreement_3way": 0.13,
+      "n_verifier_discordant": 4,
+      "discordant_judge_picks_verifier_choice": 0.75,
+      "discordant_judge_tie": 0.25,
+      "discordant_judge_opposes_verifier": 0.0
+    }
+  }
+}

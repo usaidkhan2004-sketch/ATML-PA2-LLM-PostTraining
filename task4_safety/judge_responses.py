@@ -3,13 +3,15 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from pathlib import Path
+import time
+from collections import Counter
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 
-from common.data import load_yaml, read_jsonl
-from common.models import resolve_dtype
+from common.data import load_yaml, read_jsonl, repo_path
+from common.logging_utils import append_jsonl
+from common.models import get_device, resolve_dtype
 
 LABELS = {
     "SAFE_ANSWER",
@@ -56,6 +58,8 @@ def load_judge(cfg):
         kwargs["dtype"] = resolve_dtype(cfg.get("dtype", "float16"))
 
     model = AutoModelForCausalLM.from_pretrained(cfg["ai_judge_model"], **kwargs)
+    if "quantization_config" not in kwargs:
+        model = model.to(get_device())   # hardware adaptation: the starter leaves the model on the CPU without CUDA
     model.eval()
     return tok, model
 
@@ -105,17 +109,34 @@ def judge_one(tok, model, prompt, response, max_new_tokens=64):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="configs/feedback.yaml")
-    ap.add_argument("--input", help="Optional generated JSONL file to inspect")
+    ap.add_argument("--policies", default="sft,dpo,ppo,grpo")
+    ap.add_argument("--limit", type=int, help="quick test: only the first N responses per policy")
+    ap.add_argument("--outdir", default="task4_safety")
     args = ap.parse_args()
     cfg = load_yaml(args.config)
+    outdir = repo_path(cfg["results_dir"]) / args.outdir
     tok, model = load_judge(cfg)
-    print("Fixed Task 4 judge loaded:", cfg["ai_judge_model"])
-    if args.input:
-        rows = read_jsonl(args.input)
-        print("Input rows:", len(rows))
-    raise NotImplementedError(
-        "TODO(student): apply judge_one to your frozen-policy response files, cache the labels, and implement the required Task 4 aggregation."
-    )
+    print("Fixed Task 4 judge loaded:", cfg["ai_judge_model"], flush=True)
+    for policy in args.policies.split(","):
+        rows = read_jsonl(outdir / f"generated_{policy}.jsonl")
+        if args.limit:
+            rows = rows[:args.limit]
+        dst = outdir / f"judged_{policy}.jsonl"
+        done = {r["xstest_id"] for r in read_jsonl(dst)} if dst.exists() else set()
+        todo = [r for r in rows if r["xstest_id"] not in done]
+        print(f"[{policy}] {len(done)} already judged, {len(todo)} to go", flush=True)
+        t0, counts = time.perf_counter(), Counter()
+        for i, row in enumerate(todo, start=1):
+            res = judge_one(tok, model, row["prompt"], row["response"], int(cfg["judge_max_new_tokens"]))
+            counts[res["label"]] += 1
+            append_jsonl(dst, {
+                "xstest_id": row["xstest_id"], "policy": policy, "prompt": row["prompt"],
+                "benchmark_class": row["benchmark_class"], "type": row["type"],
+                "response_tokens": row["response_tokens"], "judge_label": res["label"],
+                "judge_confidence": res["confidence"], "judge_rationale_tag": res["rationale_tag"],
+            })
+            if i % 25 == 0 or i == len(todo):
+                print(f"  [{policy}] {i}/{len(todo)} | {time.perf_counter() - t0:.0f}s | {dict(counts)}", flush=True)
 
 
 if __name__ == "__main__":

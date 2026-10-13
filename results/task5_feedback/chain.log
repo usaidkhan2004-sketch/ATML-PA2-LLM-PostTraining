@@ -1,0 +1,238 @@
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Policies: ['sft', 'rlvr', 'rlaif'] | rows: {'gsm': 6, 'transfer': 6}
+  [sft] 6/6
+[gsm/sft] saved 6 responses in 27s
+  [rlvr] 6/6
+[gsm/rlvr] saved 6 responses in 27s
+  [rlaif] 6/6
+[gsm/rlaif] saved 6 responses in 26s
+  [sft] 6/6
+[transfer/sft] saved 6 responses in 13s
+  [rlvr] 6/6
+[transfer/rlvr] saved 6 responses in 14s
+  [rlaif] 6/6
+[transfer/rlaif] saved 6 responses in 14s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.21s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.56it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.38it/s]
+Fixed pairwise judge loaded
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[gsm/rlvr vs sft] 6 comparisons in 8s
+[gsm/rlaif vs sft] 6 comparisons in 2s
+[transfer/rlvr vs sft] 6 comparisons in 5s
+[transfer/rlaif vs sft] 6 comparisons in 1s
+
+== gsm ==
+  sft    acc 0.167 [0.030,0.564] format 0.333 len 296+-85 trunc 0.000 failures {'no_designated_final': 4, 'correct': 1, 'wrong_final': 1}
+  rlvr   acc 0.167 [0.030,0.564] format 0.333 len 297+-86 trunc 0.000 failures {'no_designated_final': 4, 'correct': 1, 'wrong_final': 1}
+  rlaif  acc 0.167 [0.030,0.564] format 0.333 len 296+-85 trunc 0.000 failures {'no_designated_final': 4, 'correct': 1, 'wrong_final': 1}
+  rlvr   vs SFT: win rate 0.333 [0.000,0.667] (W/T/L 2/0/4) agreement(3-way) 0.000 discordant n=0
+  rlaif  vs SFT: win rate 0.500 [0.167,0.833] (W/T/L 3/0/3) agreement(3-way) 0.000 discordant n=0
+
+== transfer ==
+  sft    acc 0.500 [0.188,0.812] format 0.667 len 133+-39 trunc 0.000 failures {'no_designated_final': 2, 'correct': 3, 'wrong_final': 1}
+  rlvr   acc 0.333 [0.097,0.700] format 0.500 len 136+-39 trunc 0.000 failures {'no_designated_final': 3, 'correct': 2, 'wrong_final': 1}
+  rlaif  acc 0.333 [0.097,0.700] format 0.500 len 134+-40 trunc 0.000 failures {'no_designated_final': 3, 'correct': 2, 'wrong_final': 1}
+  rlvr   vs SFT: win rate 0.583 [0.250,0.917] (W/T/L 3/1/2) agreement(3-way) 0.333 discordant n=1
+  rlaif  vs SFT: win rate 0.583 [0.250,0.917] (W/T/L 3/1/2) agreement(3-way) 0.333 discordant n=1
+Diagnostic problems: 3 | pair types: ['reasoning_corruption', 'outcome_wrong_final', 'outcome_gold_distractor', 'persuasive_filler', 'cross_corrupt_vs_wrongfinal']
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.84it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.68it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.51it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+
+Controlled diagnostics (better / tie / wrong preference):
+  verifier reasoning_corruption         n=3 better 0.00 tie 1.00 wrong 0.00
+  verifier outcome_wrong_final          n=3 better 1.00 tie 0.00 wrong 0.00
+  verifier outcome_gold_distractor      n=3 better 1.00 tie 0.00 wrong 0.00
+  verifier persuasive_filler            n=3 better 0.00 tie 1.00 wrong 0.00
+  verifier cross_corrupt_vs_wrongfinal  n=3 better 1.00 tie 0.00 wrong 0.00
+  verifier S_reason=0.00 | S_outcome=1.00 (tie 0.00 wrong 0.00, n=6)
+  judge    reasoning_corruption         n=3 better 0.33 tie 0.33 wrong 0.33
+  judge    outcome_wrong_final          n=3 better 0.00 tie 1.00 wrong 0.00
+  judge    outcome_gold_distractor      n=3 better 0.00 tie 1.00 wrong 0.00
+  judge    persuasive_filler            n=3 better 0.00 tie 0.00 wrong 1.00
+  judge    cross_corrupt_vs_wrongfinal  n=3 better 0.33 tie 0.67 wrong 0.00
+  judge    S_reason=0.33 | S_outcome=0.00 (tie 1.00 wrong 0.00, n=6)
+  mean words per variant: {'corrupt_reasoning_correct_final': 26.7, 'good_reasoning_wrong_final': 26.7, 'clean_correct': 26.7, 'gold_distractor_wrong_final': 17.0, 'persuasive_filler_correct': 36.7}
+  verifier-vs-judge disagreements: 13 of 15 pairs -> diagnostic_disagreements.jsonl
+In-domain (GSM8K) vs out-of-domain (SVAMP):
+  sft    GSM acc 0.167 fmt 0.333 len 296 | SVAMP acc 0.500 fmt 0.667 len 133 | drop -0.333
+  rlvr   GSM acc 0.167 fmt 0.333 len 297 | SVAMP acc 0.333 fmt 0.500 len 136 | drop -0.167 | win vs SFT GSM 0.333 SVAMP 0.583 | verifier-judge agreement GSM 0.000
+  rlaif  GSM acc 0.167 fmt 0.333 len 296 | SVAMP acc 0.333 fmt 0.500 len 134 | drop -0.167 | win vs SFT GSM 0.500 SVAMP 0.583 | verifier-judge agreement GSM 0.000
+Diagnostics: S_reason verifier/judge = 0.0 / 0.33 | S_outcome verifier/judge = 1.0 / 0.0
+0 verifier-judge disagreement cases saved to qualitative_candidates.jsonl (plus diagnostic_disagreements.jsonl)
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Policies: ['sft', 'rlvr', 'rlaif'] | rows: {'gsm': 300, 'transfer': 100}
+  [sft] 16/300
+  [sft] 32/300
+  [sft] 48/300
+  [sft] 64/300
+  [sft] 80/300
+  [sft] 96/300
+  [sft] 112/300
+  [sft] 128/300
+  [sft] 144/300
+  [sft] 160/300
+  [sft] 176/300
+  [sft] 192/300
+  [sft] 208/300
+  [sft] 224/300
+  [sft] 240/300
+  [sft] 256/300
+  [sft] 272/300
+  [sft] 288/300
+  [sft] 300/300
+[gsm/sft] saved 300 responses in 661s
+  [rlvr] 16/300
+  [rlvr] 32/300
+  [rlvr] 48/300
+  [rlvr] 64/300
+  [rlvr] 80/300
+  [rlvr] 96/300
+  [rlvr] 112/300
+  [rlvr] 128/300
+  [rlvr] 144/300
+  [rlvr] 160/300
+  [rlvr] 176/300
+  [rlvr] 192/300
+  [rlvr] 208/300
+  [rlvr] 224/300
+  [rlvr] 240/300
+  [rlvr] 256/300
+  [rlvr] 272/300
+  [rlvr] 288/300
+  [rlvr] 300/300
+[gsm/rlvr] saved 300 responses in 704s
+  [rlaif] 16/300
+  [rlaif] 32/300
+  [rlaif] 48/300
+  [rlaif] 64/300
+  [rlaif] 80/300
+  [rlaif] 96/300
+  [rlaif] 112/300
+  [rlaif] 128/300
+  [rlaif] 144/300
+  [rlaif] 160/300
+  [rlaif] 176/300
+  [rlaif] 192/300
+  [rlaif] 208/300
+  [rlaif] 224/300
+  [rlaif] 240/300
+  [rlaif] 256/300
+  [rlaif] 272/300
+  [rlaif] 288/300
+  [rlaif] 300/300
+[gsm/rlaif] saved 300 responses in 702s
+  [sft] 16/100
+  [sft] 32/100
+  [sft] 48/100
+  [sft] 64/100
+  [sft] 80/100
+  [sft] 96/100
+  [sft] 100/100
+[transfer/sft] saved 100 responses in 150s
+  [rlvr] 16/100
+  [rlvr] 32/100
+  [rlvr] 48/100
+  [rlvr] 64/100
+  [rlvr] 80/100
+  [rlvr] 96/100
+  [rlvr] 100/100
+[transfer/rlvr] saved 100 responses in 160s
+  [rlaif] 16/100
+  [rlaif] 32/100
+  [rlaif] 48/100
+  [rlaif] 64/100
+  [rlaif] 80/100
+  [rlaif] 96/100
+  [rlaif] 100/100
+[transfer/rlaif] saved 100 responses in 160s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.48s/it]
+Fixed pairwise judge loaded
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+    judged 25/300
+    judged 50/300
+    judged 75/300
+    judged 100/300
+    judged 125/300
+    judged 150/300
+    judged 175/300
+    judged 200/300
+    judged 225/300
+    judged 250/300
+    judged 275/300
+    judged 300/300
+[gsm/rlvr vs sft] 300 comparisons in 377s
+    judged 25/300
+    judged 50/300
+    judged 75/300
+    judged 100/300
+    judged 125/300
+    judged 150/300
+    judged 175/300
+    judged 200/300
+    judged 225/300
+    judged 250/300
+    judged 275/300
+    judged 300/300
+[gsm/rlaif vs sft] 300 comparisons in 83s
+    judged 25/100
+    judged 50/100
+    judged 75/100
+    judged 100/100
+[transfer/rlvr vs sft] 100 comparisons in 91s
+    judged 25/100
+    judged 50/100
+    judged 75/100
+    judged 100/100
+[transfer/rlaif vs sft] 100 comparisons in 10s
+
+== gsm ==
+  sft    acc 0.287 [0.238,0.340] format 0.360 len 274+-85 trunc 0.020 failures {'no_designated_final': 186, 'correct': 86, 'wrong_final': 19, 'truncated_no_final': 6, 'wrong_final_gold_in_text': 3}
+  rlvr   acc 0.297 [0.248,0.351] format 0.373 len 275+-86 trunc 0.020 failures {'no_designated_final': 182, 'correct': 89, 'wrong_final': 20, 'wrong_final_gold_in_text': 3, 'truncated_no_final': 6}
+  rlaif  acc 0.283 [0.235,0.337] format 0.363 len 276+-87 trunc 0.023 failures {'no_designated_final': 184, 'correct': 85, 'wrong_final': 20, 'truncated_no_final': 7, 'wrong_final_gold_in_text': 4}
+  rlvr   vs SFT: win rate 0.485 [0.438,0.533] (W/T/L 109/73/118) agreement(3-way) 0.240 discordant n=15
+  rlaif  vs SFT: win rate 0.448 [0.402,0.497] (W/T/L 97/75/128) agreement(3-way) 0.240 discordant n=11
+
+== transfer ==
+  sft    acc 0.450 [0.356,0.548] format 0.580 len 164+-72 trunc 0.000 failures {'no_designated_final': 42, 'correct': 45, 'wrong_final': 7, 'wrong_final_gold_in_text': 6}
+  rlvr   acc 0.440 [0.347,0.538] format 0.570 len 163+-70 trunc 0.000 failures {'no_designated_final': 43, 'correct': 44, 'wrong_final': 7, 'wrong_final_gold_in_text': 6}
+  rlaif  acc 0.410 [0.319,0.508] format 0.540 len 165+-72 trunc 0.000 failures {'no_designated_final': 46, 'correct': 41, 'wrong_final': 7, 'wrong_final_gold_in_text': 6}
+  rlvr   vs SFT: win rate 0.555 [0.465,0.645] (W/T/L 50/11/39) agreement(3-way) 0.120 discordant n=3
+  rlaif  vs SFT: win rate 0.545 [0.455,0.635] (W/T/L 49/11/40) agreement(3-way) 0.130 discordant n=4
+Diagnostic problems: 20 | pair types: ['reasoning_corruption', 'outcome_wrong_final', 'outcome_gold_distractor', 'persuasive_filler', 'cross_corrupt_vs_wrongfinal']
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.49s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.34it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.16it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  scored 5/20 problems
+  scored 10/20 problems
+  scored 15/20 problems
+  scored 20/20 problems
+
+Controlled diagnostics (better / tie / wrong preference):
+  verifier reasoning_corruption         n=20 better 0.00 tie 1.00 wrong 0.00
+  verifier outcome_wrong_final          n=20 better 1.00 tie 0.00 wrong 0.00
+  verifier outcome_gold_distractor      n=20 better 1.00 tie 0.00 wrong 0.00
+  verifier persuasive_filler            n=20 better 0.00 tie 1.00 wrong 0.00
+  verifier cross_corrupt_vs_wrongfinal  n=20 better 1.00 tie 0.00 wrong 0.00
+  verifier S_reason=0.00 | S_outcome=1.00 (tie 0.00 wrong 0.00, n=40)
+  judge    reasoning_corruption         n=20 better 0.10 tie 0.60 wrong 0.30
+  judge    outcome_wrong_final          n=20 better 0.15 tie 0.85 wrong 0.00
+  judge    outcome_gold_distractor      n=20 better 0.00 tie 1.00 wrong 0.00
+  judge    persuasive_filler            n=20 better 0.10 tie 0.35 wrong 0.55
+  judge    cross_corrupt_vs_wrongfinal  n=20 better 0.20 tie 0.80 wrong 0.00
+  judge    S_reason=0.10 | S_outcome=0.07 (tie 0.93 wrong 0.00, n=40)
+  mean words per variant: {'clean_correct': 49.7, 'good_reasoning_wrong_final': 49.7, 'persuasive_filler_correct': 59.7, 'gold_distractor_wrong_final': 17.0, 'corrupt_reasoning_correct_final': 49.7}
+  verifier-vs-judge disagreements: 74 of 100 pairs -> diagnostic_disagreements.jsonl
+In-domain (GSM8K) vs out-of-domain (SVAMP):
+  sft    GSM acc 0.287 fmt 0.360 len 274 | SVAMP acc 0.450 fmt 0.580 len 164 | drop -0.163
+  rlvr   GSM acc 0.297 fmt 0.373 len 275 | SVAMP acc 0.440 fmt 0.570 len 163 | drop -0.143 | win vs SFT GSM 0.485 SVAMP 0.555 | verifier-judge agreement GSM 0.240
+  rlaif  GSM acc 0.283 fmt 0.363 len 276 | SVAMP acc 0.410 fmt 0.540 len 165 | drop -0.127 | win vs SFT GSM 0.448 SVAMP 0.545 | verifier-judge agreement GSM 0.240
+Diagnostics: S_reason verifier/judge = 0.0 / 0.1 | S_outcome verifier/judge = 1.0 / 0.07
+14 verifier-judge disagreement cases saved to qualitative_candidates.jsonl (plus diagnostic_disagreements.jsonl)
