@@ -1,0 +1,2 @@
+clean_correct,good_reasoning_wrong_final,persuasive_filler_correct,gold_distractor_wrong_final,corrupt_reasoning_correct_final
+49.7,49.7,59.7,17.0,49.7

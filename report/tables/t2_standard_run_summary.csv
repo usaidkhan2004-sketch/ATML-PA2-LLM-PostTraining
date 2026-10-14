@@ -1,0 +1,2 @@
+updates,wall_clock_s,peak_mps_driver_GB(sampled),total_generated_tokens,raw_reward_mean,kl_token_mean_mean,entropy_mean,response_tokens_mean,policy_loss_mean,value_loss_mean,clip_fraction_mean,grad_norm_policy_median,grad_norm_value_median,critic_explained_variance_median
+20,372.11851508310065,12.27325439453125,6003,0.9490966796875,7.400158106065646e-05,0.98584940508008,300.15,4.3340773348177206e-05,3.91189124584198,0.0,0.2751091718673706,61.72969436645508,-4.982319355010986

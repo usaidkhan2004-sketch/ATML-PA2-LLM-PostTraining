@@ -1,0 +1,7 @@
+condition,reward_raw,delta_raw_vs_midpoint,delta_raw_ci_lo,delta_raw_ci_hi,kl_token_mean,entropy_token_mean,len_mean,len_std,frac_truncated,stab_mean_clip_fraction,stab_max_ratio_dev,stab_median_policy_gradnorm,stab_max_policy_gradnorm
+midpoint (start),1.3418,0.0,0.0,0.0,-5.1e-05,1.056,304.5,247.9,0.105,,,,
+SFT base,1.361,0.0192,-0.0641,0.1024,0.0,1.053,298.2,244.2,0.085,,,,
+standard 20 updates,1.3374,-0.0043,-0.0975,0.0876,-1.5e-05,1.0679,296.2,241.5,0.075,0.0,0.00422,0.2751,2.2928
+fork beta_KL=0.0,1.3232,-0.0186,-0.0947,0.0601,1.6e-05,1.0529,313.4,259.1,0.115,0.0,0.00361,0.337,1.059
+fork beta_KL=0.1,1.3868,0.0451,-0.0315,0.1155,-1.6e-05,1.0645,302.5,248.6,0.095,0.0,0.00396,0.3366,1.0569
+fork beta_KL=0.2,1.3827,0.0409,-0.0461,0.1307,-5e-06,1.0453,306.1,252.4,0.105,0.0,0.00375,0.3366,1.0533

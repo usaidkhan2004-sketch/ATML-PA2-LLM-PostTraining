@@ -1,0 +1,14 @@
+== Task 1: DPO loss  L = -log sigmoid(beta * [(log pi(y+) - log ref(y+)) - (log pi(y-) - log ref(y-))])
+fixed implementation matches the manual formula: True
+policy == reference: fixed loss 0.693147 (ln 2 = 0.693147); original (+) version 0.877805
+raising the chosen log-prob lowers the loss: True
+
+== Task 2: PPO clipped surrogate  L = -E[min(rho*A, clip(rho,1-eps,1+eps)*A)]
+A=+1, rho=1.5: fixed loss -1.200 (expect -1.2); original max-version would give -1.500
+A=-1, rho=0.5: fixed loss +0.800 (expect +0.8); original max-version would give +0.500
+gradient in the clipped region (A>0, rho=1.5): 0.0 (expect 0)
+
+== Task 3: GRPO group-relative advantages  A_k = (r_k - mean_group) / (std_group + eps)
+group 0 advantages (fixed): [-1.342, -0.447, 0.447, 1.342], mean 0.000000
+group 1, all rewards equal (fixed, expect zeros): [0.0, 0.0, 0.0, 0.0]
+group 1 with the original whole-batch normalization: [0.978, 0.978, 0.978, 0.978]
