@@ -351,5 +351,136 @@
         "AMBIGUOUS": 1
       }
     }
+  },
+  "manual_audit": {
+    "overall": {
+      "n": 240,
+      "label_agreement": 0.6458333333333334,
+      "cohen_kappa": 0.41448293676989756,
+      "behavior_agreement_refused_vs_complied": 0.7958333333333333,
+      "manual_ambiguous_rate": 0.0625,
+      "judge_ambiguous_rate": 0.0
+    },
+    "by_policy": {
+      "dpo": {
+        "n": 60,
+        "label_agreement": 0.65,
+        "cohen_kappa": 0.4,
+        "behavior_agreement_refused_vs_complied": 0.8,
+        "manual_ambiguous_rate": 0.03333333333333333,
+        "judge_ambiguous_rate": 0.0
+      },
+      "grpo": {
+        "n": 60,
+        "label_agreement": 0.65,
+        "cohen_kappa": 0.42622950819672134,
+        "behavior_agreement_refused_vs_complied": 0.8,
+        "manual_ambiguous_rate": 0.06666666666666667,
+        "judge_ambiguous_rate": 0.0
+      },
+      "ppo": {
+        "n": 60,
+        "label_agreement": 0.6333333333333333,
+        "cohen_kappa": 0.4051374493014872,
+        "behavior_agreement_refused_vs_complied": 0.7833333333333333,
+        "manual_ambiguous_rate": 0.08333333333333333,
+        "judge_ambiguous_rate": 0.0
+      },
+      "sft": {
+        "n": 60,
+        "label_agreement": 0.65,
+        "cohen_kappa": 0.42622950819672134,
+        "behavior_agreement_refused_vs_complied": 0.8,
+        "manual_ambiguous_rate": 0.06666666666666667,
+        "judge_ambiguous_rate": 0.0
+      }
+    },
+    "confusion_manual_rows_by_judge_cols": {
+      "SAFE_ANSWER": {
+        "SAFE_ANSWER": 54,
+        "JUSTIFIED_REFUSAL": 12,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 8,
+        "AMBIGUOUS": 15
+      },
+      "JUSTIFIED_REFUSAL": {
+        "SAFE_ANSWER": 10,
+        "JUSTIFIED_REFUSAL": 101,
+        "UNSAFE_COMPLIANCE": 4,
+        "OVER_REFUSAL": 36,
+        "AMBIGUOUS": 0
+      },
+      "UNSAFE_COMPLIANCE": {
+        "SAFE_ANSWER": 0,
+        "JUSTIFIED_REFUSAL": 0,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 0,
+        "AMBIGUOUS": 0
+      },
+      "OVER_REFUSAL": {
+        "SAFE_ANSWER": 0,
+        "JUSTIFIED_REFUSAL": 0,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 0,
+        "AMBIGUOUS": 0
+      },
+      "AMBIGUOUS": {
+        "SAFE_ANSWER": 0,
+        "JUSTIFIED_REFUSAL": 0,
+        "UNSAFE_COMPLIANCE": 0,
+        "OVER_REFUSAL": 0,
+        "AMBIGUOUS": 0
+      }
+    },
+    "policy_rates_on_audit_subset": {
+      "dpo": {
+        "judge": {
+          "safe_over_refusal": 0.0,
+          "safe_refusal_any": 0.43333333333333335,
+          "unsafe_compliance": 0.0
+        },
+        "manual": {
+          "safe_over_refusal": 0.36666666666666664,
+          "safe_refusal_any": 0.36666666666666664,
+          "unsafe_compliance": 0.03333333333333333
+        }
+      },
+      "grpo": {
+        "judge": {
+          "safe_over_refusal": 0.0,
+          "safe_refusal_any": 0.36666666666666664,
+          "unsafe_compliance": 0.0
+        },
+        "manual": {
+          "safe_over_refusal": 0.36666666666666664,
+          "safe_refusal_any": 0.36666666666666664,
+          "unsafe_compliance": 0.03333333333333333
+        }
+      },
+      "ppo": {
+        "judge": {
+          "safe_over_refusal": 0.0,
+          "safe_refusal_any": 0.36666666666666664,
+          "unsafe_compliance": 0.0
+        },
+        "manual": {
+          "safe_over_refusal": 0.36666666666666664,
+          "safe_refusal_any": 0.36666666666666664,
+          "unsafe_compliance": 0.03333333333333333
+        }
+      },
+      "sft": {
+        "judge": {
+          "safe_over_refusal": 0.0,
+          "safe_refusal_any": 0.36666666666666664,
+          "unsafe_compliance": 0.0
+        },
+        "manual": {
+          "safe_over_refusal": 0.36666666666666664,
+          "safe_refusal_any": 0.36666666666666664,
+          "unsafe_compliance": 0.03333333333333333
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,97 @@
+{
+  "bootstrap_resamples": 10000,
+  "seed": 0,
+  "gsm": {
+    "rlvr": {
+      "n": 300,
+      "acc_policy": 0.2966666666666667,
+      "acc_sft": 0.2866666666666667,
+      "acc_diff": 0.01,
+      "acc_diff_ci95": [
+        -0.013333333333333334,
+        0.03666666666666667
+      ],
+      "only_policy_correct": 9,
+      "only_sft_correct": 6,
+      "acc_mcnemar_p": 0.60723876953125,
+      "format_only_policy": 13,
+      "format_only_sft": 9,
+      "format_mcnemar_p": 0.5234670639038086,
+      "identical_response_rate": 0.7733333333333333,
+      "judge_tie_rate": 0.24333333333333335,
+      "n_verifier_tied_pairs": 285,
+      "judge_decides_when_verifier_ties": 0.7543859649122807,
+      "judge_winner_is_longer_rate": 0.391304347826087,
+      "n_decided_pairs_with_length_difference": 46
+    },
+    "rlaif": {
+      "n": 300,
+      "acc_policy": 0.2833333333333333,
+      "acc_sft": 0.2866666666666667,
+      "acc_diff": -0.0033333333333333335,
+      "acc_diff_ci95": [
+        -0.023416666666666593,
+        0.02
+      ],
+      "only_policy_correct": 5,
+      "only_sft_correct": 6,
+      "acc_mcnemar_p": 1.0,
+      "format_only_policy": 7,
+      "format_only_sft": 6,
+      "format_mcnemar_p": 1.0,
+      "identical_response_rate": 0.8633333333333333,
+      "judge_tie_rate": 0.25,
+      "n_verifier_tied_pairs": 289,
+      "judge_decides_when_verifier_ties": 0.7577854671280276,
+      "judge_winner_is_longer_rate": 0.38461538461538464,
+      "n_decided_pairs_with_length_difference": 26
+    }
+  },
+  "transfer": {
+    "rlvr": {
+      "n": 100,
+      "acc_policy": 0.44,
+      "acc_sft": 0.45,
+      "acc_diff": -0.01,
+      "acc_diff_ci95": [
+        -0.05,
+        0.02
+      ],
+      "only_policy_correct": 1,
+      "only_sft_correct": 2,
+      "acc_mcnemar_p": 1.0,
+      "format_only_policy": 1,
+      "format_only_sft": 2,
+      "format_mcnemar_p": 1.0,
+      "identical_response_rate": 0.89,
+      "judge_tie_rate": 0.11,
+      "n_verifier_tied_pairs": 97,
+      "judge_decides_when_verifier_ties": 0.8969072164948454,
+      "judge_winner_is_longer_rate": 0.5,
+      "n_decided_pairs_with_length_difference": 8
+    },
+    "rlaif": {
+      "n": 100,
+      "acc_policy": 0.41,
+      "acc_sft": 0.45,
+      "acc_diff": -0.04,
+      "acc_diff_ci95": [
+        -0.08,
+        -0.01
+      ],
+      "only_policy_correct": 0,
+      "only_sft_correct": 4,
+      "acc_mcnemar_p": 0.125,
+      "format_only_policy": 0,
+      "format_only_sft": 4,
+      "format_mcnemar_p": 0.125,
+      "identical_response_rate": 0.88,
+      "judge_tie_rate": 0.11,
+      "n_verifier_tied_pairs": 96,
+      "judge_decides_when_verifier_ties": 0.8958333333333334,
+      "judge_winner_is_longer_rate": 0.4,
+      "n_decided_pairs_with_length_difference": 10
+    }
+  },
+  "diagnostic_judge_tie_rate_all_pairs": 0.72
+}

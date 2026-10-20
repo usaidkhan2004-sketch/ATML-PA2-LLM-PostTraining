@@ -59,7 +59,7 @@ def trajectory(rows, panels, name, ncols, height):
             ax.set_xlabel("update", labelpad=1)
     for ax in axes[len(panels):]:
         ax.axis("off")
-    fig.tight_layout(pad=0.3, h_pad=0.6, w_pad=0.4)
+    fig.tight_layout(pad=0.3, h_pad=0.5, w_pad=0.4)
     save(fig, name)
 
 
@@ -69,14 +69,14 @@ trajectory(ppo, [("raw_reward", "learned reward", False), ("kl_token_mean", "tok
                  ("clip_fraction", "clip fraction", False), ("policy_loss", "policy loss", False),
                  ("value_loss", "value loss", False), ("grad_norm_policy", "policy grad norm", False),
                  ("critic_explained_variance", "critic expl. variance", False),
-                 ("mean_abs_ratio_dev_last_epoch", r"mean $|\rho-1|$", False)], "t2_standard_run", 5, 2.55)
+                 ("mean_abs_ratio_dev_last_epoch", r"mean $|\rho-1|$", False)], "t2_standard_run", 5, 2.2)
 
 grpo = jl(R / "task3_grpo" / "standard_train_log.jsonl")
 trajectory(grpo, [("reward_mean", "mean group reward", False), ("reward_std_in_group", "within-group std", False),
                   ("kl_token_mean", "token KL", False), ("policy_loss", "policy loss", False),
                   ("grad_norm", "grad norm (log)", True), ("entropy", "entropy", False),
                   ("length_mean", "mean length (tokens)", False), ("masked_token_fraction", "masked fraction", False)],
-           "t3_standard_run", 4, 2.45)
+           "t3_standard_run", 4, 2.1)
 
 # ---------- Task 4: judge-label shares per XSTest category ----------
 LABELS = ["SAFE_ANSWER", "JUSTIFIED_REFUSAL", "UNSAFE_COMPLIANCE", "OVER_REFUSAL", "AMBIGUOUS"]
@@ -86,7 +86,7 @@ COLORS = {"SAFE_ANSWER": "#378ADD", "JUSTIFIED_REFUSAL": "#E8A33D", "UNSAFE_COMP
           "OVER_REFUSAL": "#8E5BB5", "AMBIGUOUS": "#9A9A9A"}
 POL = ["sft", "dpo", "ppo", "grpo"]
 c = pd.read_csv(R / "task4_safety" / "category_labels.csv")
-fig, axes = plt.subplots(1, 2, figsize=(W, 2.35), gridspec_kw={"width_ratios": [10, 8]}, sharey=True)
+fig, axes = plt.subplots(1, 2, figsize=(W, 2.1), gridspec_kw={"width_ratios": [10, 8]}, sharey=True)
 for ax, cls in zip(axes, ["SAFE", "UNSAFE"]):
     sub = c[c["benchmark_class"] == cls]
     types = sorted(sub["type"].unique())
