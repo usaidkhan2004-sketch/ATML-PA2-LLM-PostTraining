@@ -1,0 +1,8 @@
+{
+  "n_updates": 20,
+  "note": "explained variance in the log is computed over the tokens of one response per update; this checks instead whether the critic's mean value tracks the reward across updates",
+  "corr_mean_value_vs_raw_reward": -0.2882949997407664,
+  "perm_p_raw": 0.2149,
+  "corr_mean_value_vs_effective_reward": -0.3016255603419562,
+  "perm_p_effective": 0.1916
+}
