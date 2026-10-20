@@ -1,0 +1,60 @@
+====================================================================================================
+D1. GRADIENT SPIKE: standard update 18 (grad norm 9.18); tokens [41, 28, 67, 3], rewards [1.95, 0.99, 1.93, -1.1], advantages [0.81, 0.04, 0.8, -1.64]
+PROMPT: If one is a mechanic, what are they likely to work with? Options: - washing a car - oil engine - servicing airplane - machine parts - machine tool Mechanics work with machines. Machine tools are used by mechanics. machine tool A birthday celebrates when a person reaches a what? Options: - funeral - new age - die - happy - obesity Age is the number of years since a person was born. New age means co ...
+FULLY MASKED update 5: tokens [512, 512, 512, 512], rewards [-0.26, 0.3, 0.33, 1.62]; PROMPT: in react dev run, i want to simulate api response from backend fetch. in chrome dev console, i have 'replay XHR' to re-fetch api response, but what i want to do is to tweak specific component/attribut ...
+FULLY MASKED update 13: tokens [512, 512, 512, 512], rewards [2.4, 1.87, 1.68, 2.62]; PROMPT: Write a well-researched essay emphasizing the crucial role of biodiversity in safeguarding the planet from the adverse effects of human activities such as climate change, overfishing, deforestation, a ...
+FULLY MASKED update 15: tokens [512, 512, 512, 512], rewards [0.71, -0.03, -0.45, -0.15]; PROMPT: write a trading program that uses hoeffding bounds to guarantee with 80 percent confidence that trades are profitable within a one hour window.
+
+====================================================================================================
+D2. UNINFORMATIVE K=2 GROUPS IN THE CACHE (identical rewards)
+[bin medium] rewards [2.406, 2.406]  tokens [14, 14]  identical text: True
+   A: Warm: Orange, Red Cool: Green, Blue, Purple
+   B: Warm: Orange, Red Cool: Green, Blue, Purple
+[bin hard] rewards [1.273, 1.273]  tokens [2, 2]  identical text: True
+   A: 0
+   B: 0
+[bin hard] rewards [1.273, 1.273]  tokens [2, 2]  identical text: True
+   A: 0
+   B: 0
+[bin hard] rewards [1.273, 1.273]  tokens [2, 2]  identical text: True
+   A: 0
+   B: 0
+[bin hard] rewards [1.273, 1.273]  tokens [2, 2]  identical text: True
+   A: 0
+   B: 0
+[bin hard] rewards [-1.055, -1.055]  tokens [10, 10]  identical text: True
+   A: Where do they know it's already over?
+   B: Where do they know it's already over?
+
+====================================================================================================
+D3. HELD-OUT: largest length differences, Dr. GRPO minus canonical GRPO (same prompt)
+
+[Dr much SHORTER] prompt_id=cba04afe1491  canonical: 768 tok, reward -0.63, trunc True | Dr: 98 tok, reward -0.63, trunc False
+PROMPT   : No 20.—LE PRINCE DE TALLEYRAND AU ROI LOUIS XVIII. No 23 bis.—LES AMBASSADEURS DU ROI AU CONGRÈS, AU MINISTRE DES AFFAIRES ÉTRANGÈRES A PARIS. No 16ter.—LE ROI LOUIS XVIII AU PRINCE DE TALLEYRAND. No 24 bis.—LES AMBASSADEURS DU ROI AU CONGRÈS, AU MIN ...
+CANON END: ... ntenance of national honor and integrity. The excerpt underscores the king's confidence in his advisor's ability to lead effectively. No 25 bis—LES AMBASSADEURS
+DR END   : ... able for use in official or diplomatic contexts. Additionally, could you explain any potential nuances or cultural implications that might exist in this phrase?
+
+[Dr much SHORTER] prompt_id=bc64faa4232d  canonical: 712 tok, reward +0.49, trunc False | Dr: 171 tok, reward -0.39, trunc False
+PROMPT   : In this task, given a sentence in the English language, and your task is to convert it into the Burmese language. Example input: The ED, which is responsible for enforcing foreign exchange control laws, has alleged that Singh, along with his son Jaga ...
+CANON END: ... ။ ဒီစဉ်တွေကို အမေရိကန်အခြေခံပြီး လုပ်ငန်းအလုပ်ဆောင်နေခဲ့သည်။ အမျိုးသားတမ်း အစိုးမိုးရေး သို့မဟုတ် အနေနိုင်ငံ အိမ်ကြီး အပိုင်းတွေကို သင်္ဘောပျိုးသုတ်နိုင်ခဲ့သည်။
+DR END   : ... t to get out of here as quickly as possible. Output: This time, I am not attempting to alter anything; I merely wish to depart from here as swiftly as feasible.
+
+[Dr much SHORTER] prompt_id=1877a654dd3d  canonical: 768 tok, reward +0.15, trunc True | Dr: 400 tok, reward +0.26, trunc False
+PROMPT   : Please answer the following question: Read the below conversation. Dad: Hey. Uh, what are you doing home this weekend? I thought classes didn't end until next week. Daughter: Hi Dad. I love you. Dad: Ah, the three magic words: I NEED HELP! I've heard ...
+CANON END: ... se help me? I'm begging you. Dad: Uh, uh, uh, uh, uh, uh. Daughter: Please. Dad: Uh, uh, uh, uh, uh, uh. Daughter: Please. Dad: Uh, uh, uh, uh, uh, uh. Daughter
+DR END   : ... f course, honey. Let's make sure everything goes smoothly. Daughter: Thank you, Dad. How many times does the daughter say "I LOVE YOU"? Answer: The answer is 4.
+
+[Dr much LONGER] prompt_id=3f6816990d76  canonical: 479 tok, reward +0.49, trunc False | Dr: 768 tok, reward -6.18, trunc True
+PROMPT   : Can you summarize the Learn How To Academy System scam and why it's a repeated one? Answer according to: Learn How To Academy Scam AGAIN! A different title for the same game. Diane Fisher. Same exact, same old, work from home link posting online scam ...
+CANON END: ... uspecting people and make profits from their hard-earned savings. Therefore, it's crucial to understand its characteristics and avoid getting caught in its web.
+DR END   : ... riosity effectively. - **Technological Advancements**: The internet provides endless opportunities for fraudsters to spread their message. As long as there is a
+
+[Dr much LONGER] prompt_id=1d48f66f2d29  canonical: 498 tok, reward +2.91, trunc False | Dr: 768 tok, reward +1.24, trunc True
+PROMPT   : There is a project I want to build that requires an ESP 8266 Lolin Mini D1. This is what the wiring in ESPHome looks like: ```yaml output: - platform: gpio pin: 14 id: relay2 # HS2 / RJ45 Pin 6 / ESP D5 inverted: true - platform: gpio pin: 12 id: rel ...
+CANON END: ... model for accurate pin mappings. By setting up your configuration as shown above, you should be able to control the relays using your ESP32S without any issues.
+DR END   : ... GPIOs to ESP32D1 Pins**: Use the provided mapping (`map_gpio_to_d1_pin`) to associate each ESP32D1 pin with an ESP8266 pin. 3. **Configure Outputs**: Define the
+
+[Dr much LONGER] prompt_id=4757a77e3611  canonical: 226 tok, reward +0.73, trunc False | Dr: 384 tok, reward +1.74, trunc False
+PROMPT   : I would like to have a role play conversation. But before starting I would like to give you information about your character and mine. Then the setting and specifications of the role play.
+CANON END: ... ur role-play conversation. Please let me know what topic or scenario you'd like to explore, along with any specific guidelines or requirements you have in mind.
+DR END   : ... 's important that the roles are clear and distinct, so they can focus on their respective tasks without confusion. Would you like to proceed with the role-play?
